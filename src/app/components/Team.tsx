@@ -1,0 +1,325 @@
+import { useState } from "react";
+import lokesh from "../../assets/lokesh.jpeg";
+import twinkle from "../../assets/twinkle.jpeg";
+import harpreet from "../../assets/harpreet.jpeg";
+import ankit from "../../assets/Ankit.jpeg";
+import himanshu from "../../assets/himanshu.png";
+import aastha from "../../assets/aastha.jpeg";
+import dikshant from "../../assets/dikshant.jpg";
+import aman from "../../assets/aman.jpeg";
+import rajkumar from "../../assets/rajkumar.jpeg";
+import saman from "../../assets/saman.jpeg";
+import sahil from "../../assets/sahil.jpeg";
+import rishabh from "../../assets/rishabh.jpeg";
+import manthan from "../../assets/manthan.jpg";
+import ayushi from "../../assets/ayushi.jpeg";
+import aditi from "../../assets/aditi.jpeg";
+import omi from "../../assets/omi.jpeg";
+import janvi from "../../assets/janvi.jpeg";
+import nikita from "../../assets/nikita.jpeg";
+import preet from "../../assets/preet.jpeg";
+import ambika from "../../assets/ambika.jpeg";
+import rupen from "../../assets/rupen.jpeg";
+import mahesh from "../../assets/mahesh.jpeg";
+import dharmendar from "../../assets/dharmendar.jpeg";
+import rajni from "../../assets/rajni.jpeg";
+import sehrish from "../../assets/sehrish.jpeg";
+import nandini from "../../assets/nandini.jpeg";
+import mohit from "../../assets/mohit.jpg";
+import sachin from "../../assets/sachin.jpg";
+import arun from "../../assets/arun.jpg";
+import abhishek from "../../assets/abhishek.jpeg";
+import lavisha from "../../assets/lavisha.jpeg";
+import harshpreet from "../../assets/harshpreet.jpeg";
+import harshit from "../../assets/harshit.jpg";
+import pavnesh from "../../assets/pavnesh.jpeg";
+import vipul from "../../assets/vipul.png";
+import akshay from "../../assets/akshay.png";
+export function Team() {
+  const [showAll, setShowAll] = useState(false);
+
+  const teamMembers = [
+    {
+      name: "Lokesh",
+      role: "Coordinator",
+      instrument: "Drummer",
+      image: lokesh,
+    },
+    {
+      name: "Rajni",
+      role: "Coordinator",
+      instrument: "Vocalist",
+      image: rajni,
+    },
+    {
+      name: "Himanshu",
+      role: "Management Coordinator",
+      instrument: " ",
+      image: himanshu,
+    },
+    {
+      name: "Twinkle",
+      role: "Management Coordinator",
+      instrument: "Vocalist",
+      image: twinkle,
+    },
+    {
+      name: "Akshay Bholay",
+      role: "",
+      instrument: "Vocalist & Guitarist",
+      image: akshay,
+    },
+    {
+      name: "Vipul",
+      role: "",
+      instrument: "Vocalist & Guitarist",
+      image: vipul,
+    },
+    {
+      name: "Harpreet",
+      role: " ",
+      instrument: "Vocalist & Guitarist",
+      image: harpreet,
+    },
+    {
+      name: "Aditi",
+      role: "",
+      instrument: "Vocalist",
+      image: aditi,
+    },
+    {
+      name: "Ankit",
+      role: "",
+      instrument: "Guitarist & Vocalist",
+      image: ankit,
+    },
+    {
+      name: "Nikita",
+      role: "",
+      instrument: "Guitarist & Vocalist",
+      image: nikita,
+    },
+    {
+      name: "Harshit Gupta",
+      role: "",
+      instrument: "Management ",
+      image: harshit,
+    },
+    {
+      name: "Dikshant Bhardwaj",
+      role: "",
+      instrument: "Vocalist",
+      image: dikshant,
+    },
+    {
+      name: "Arun",
+      role: "",
+      instrument: "Vocalist",
+      image: arun,
+    },
+    {
+      name: "Aastha",
+      role: "",
+      instrument: "Vocalist",
+      image: aastha,
+    },
+    {
+      name: "Aman",
+      role: "",
+      instrument: "Drummer",
+      image: aman,
+    },
+    {
+      name: "Manthan",
+      role: "",
+      instrument: "Vocalist & Guitarist",
+      image: manthan,
+    },
+    {
+      name: "Saman",
+      role: "",
+      instrument: "Vocalist",
+      image: saman,
+    },
+    {
+      name: "Omi",
+      role: "",
+      instrument: "Management ",
+      image: omi,
+    },
+    {
+      name: "Sahil",
+      role: "",
+      instrument: "Management ",
+      image: sahil,
+    },
+    {
+      name: " Janvi",
+      role: " ",
+      instrument: "Management ",
+      image: janvi,
+    },
+    {
+      name: "Raj Kumar ",
+      role: "",
+      instrument: "Vocalist",
+      image: rajkumar,
+    },
+    {
+      name: "Ayushi",
+      role: "",
+      instrument: "Vocalist",
+      image: ayushi,
+    },
+    {
+      name: "Rishabh",
+      role: "",
+      instrument: "Guitarist",
+      image: rishabh,
+    },
+    {
+      name: "Lavisha",
+      role: "",
+      instrument: "Vocalist",
+      image: lavisha,
+    },
+    {
+      name: "Preet ",
+      role: "",
+      instrument: "Vocalist",
+      image: preet,
+    },
+    {
+      name: "Ambika",
+      role: "",
+      instrument: "Vocalist",
+      image: ambika,
+    },
+    {
+      name: "Nandini",
+      role: "",
+      instrument: "Vocalist",
+      image: nandini,
+    },
+    {
+      name: "Dharmendra",
+      role: "",
+      instrument: "Rapper",
+      image: dharmendar,
+    },
+    {
+      name: "Mahesh",
+      role: "",
+      instrument: "Keyboard Player",
+      image: mahesh,
+    },
+    {
+      name: "Rupen",
+      role: "",
+      instrument: "Vocalist",
+      image: rupen,
+    },
+    {
+      name: "Sehrish",
+      role: "",
+      instrument: "Vocalist",
+      image: sehrish,
+    },
+    {
+      name: "Pavnesh",
+      role: "",
+      instrument: "Rapper",
+      image: pavnesh,
+    },
+    {
+      name: "Harshpreet",
+      role: "",
+      instrument: "Flutist ",
+      image: harshpreet,
+    },
+    {
+      name: "Abhishek Sinha",
+      role: "",
+      instrument: "Vocalist ",
+      image: abhishek,
+    },
+    {
+      name: "Mohit Jangra",
+      role: "",
+      instrument: "Vocalist ",
+      image: mohit,
+    },
+    {
+      name: "Sachin Dadarwal",
+      role: "",
+      instrument: "Vocalist ",
+      image: sachin,
+    },
+  ];
+
+  const displayedMembers = showAll ? teamMembers : teamMembers.slice(0, 8);
+
+  return (
+    <section id="team" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Meet Our Team</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            The talented individuals leading Goonj
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {displayedMembers.map((member, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow"
+            >
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="font-bold text-xl mb-1">{member.name}</h3>
+                <p className="text-purple-600 font-semibold mb-1">
+                  {member.role}
+                </p>
+                <p className="text-gray-600">{member.instrument}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {!showAll && (
+          <div className="text-center mt-12">
+            <button
+              onClick={() => setShowAll(true)}
+              className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors"
+            >
+              See More Team Members
+            </button>
+          </div>
+        )}
+
+        {showAll && (
+          <div className="text-center mt-12">
+            <button
+              onClick={() => {
+                setShowAll(false);
+                document
+                  .getElementById("team")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="bg-gray-600 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors"
+            >
+              Show Less
+            </button>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
