@@ -1,19 +1,20 @@
 import { Mail } from "lucide-react";
 import aarti from "../../assets/aarti.png";
 import kavita from "../../assets/kavita.png";
+
 export function TeacherCoordinator() {
   const coordinators = [
     {
       name: "Dr. Aarti Deveshwar",
-      role: "Assistant Proffesor",
+      role: "Assistant Professor",
       department: "Department of Management Studies",
       email: "r.hamilton@college.edu",
       image: aarti,
-      bio: "The hard work, dedication, and continuous support of our teachers have played a very important role in shaping and strengthening our society. Their guidance and encouragement have helped us grow, learn, and move forward with confidence, making our society what it is today",
+      bio: "The hard work, dedication, and continuous support of our teachers have played a very important role in shaping and strengthening our society. Their guidance and encouragement have helped us grow, learn, and move forward with confidence, making our society what it is today.",
     },
     {
       name: "Dr. Kavita Rathi",
-      role: "Associate Proffesor",
+      role: "Associate Professor",
       department: "Department of Computer Science Engineering",
       email: "r.hamilton@college.edu",
       image: kavita,
@@ -40,13 +41,18 @@ export function TeacherCoordinator() {
               className="bg-gradient-to-br from-blue-50 to-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow border border-blue-100"
             >
               <div className="md:flex">
-                <div className="md:w-1/3">
+                {/* Image */}
+                <div className="md:w-1/3 h-64 md:h-auto">
                   <img
                     src={coordinator.image}
                     alt={coordinator.name}
-                    className="w-full h-64 md:h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    className="w-full h-full object-cover"
                   />
                 </div>
+
+                {/* Content */}
                 <div className="md:w-2/3 p-6">
                   <h3 className="font-bold text-2xl mb-1">
                     {coordinator.name}
@@ -61,13 +67,17 @@ export function TeacherCoordinator() {
                   <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                     {coordinator.bio}
                   </p>
-                  {/* <a
+
+                  {/* Optional email */}
+                  {/* 
+                  <a
                     href={`mailto:${coordinator.email}`}
                     className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold"
                   >
                     <Mail className="w-4 h-4" />
                     {coordinator.email}
-                  </a> */}
+                  </a> 
+                  */}
                 </div>
               </div>
             </div>

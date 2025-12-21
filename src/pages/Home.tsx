@@ -11,15 +11,43 @@ import { Contact } from "../app/components/Contact";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <About />
-      <Events />
-      <Team />
-      <TeacherCoordinator />
-      <Alumini />
-      <Achievements />
-      <Gallery />
-      <Contact />
+      {/* HOME TOP (for Home button scroll) */}
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="events">
+        <Events />
+      </section>
+
+      <section id="team">
+        <Team />
+      </section>
+
+      <section id="coordinators">
+        <TeacherCoordinator />
+      </section>
+
+      <section id="alumni">
+        <Alumini />
+      </section>
+
+      <section id="achievements">
+        <Achievements />
+      </section>
+
+      <section id="gallery">
+        <Gallery />
+      </section>
+
+      {/* CONTACT SECTION (for Contact button scroll) */}
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 }

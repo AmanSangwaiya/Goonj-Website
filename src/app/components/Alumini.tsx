@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Quote } from "lucide-react";
+import nopic from "../../assets/nopic.jpg";
+
 import Kunal from "../../assets/Senior.jpg";
 import khushi from "../../assets/khushi.png";
 import apurva from "../../assets/apurva.png";
@@ -34,7 +35,6 @@ import deepanshuSir from "../../assets/deepanshuSir.png";
 import prisha from "../../assets/prisha.png";
 import dimple from "../../assets/dimple.png";
 import mahima from "../../assets/mahima.png";
-import nopic from "../../assets/nopic.jpg";
 import abhishekMittal from "../../assets/abhishekMittal.png";
 import dhruv from "../../assets/dhruv.png";
 import manish from "../../assets/manish.png";
@@ -45,272 +45,59 @@ export function Alumini() {
   const [showAll, setShowAll] = useState(false);
 
   const alumni = [
-    {
-      name: "Kunal Bhardwaj",
-      batch: "BATCH  2K14",
-      image: Kunal,
-    },
-    {
-      name: "Abhishek",
-      batch: "BATCH  2K14",
-      image: abhishekMittal,
-    },
-    {
-      name: "Lakshay",
-      batch: "BATCH  2K14",
-      image: nopic,
-    },
-    {
-      name: "Sapna",
-      batch: "BATCH  2K14",
-      image: nopic,
-    },
-    {
-      name: "Harshita",
-      batch: "BATCH  2K14",
-      image: nopic,
-    },
-    {
-      name: "Sunny Gaur",
-      batch: "BATCH  2K14",
-      image: nopic,
-    },
-    {
-      name: "Utkarsh",
-      batch: "BATCH  2K15",
-      image: utkarsh,
-    },
-    {
-      name: "Ayush",
-      batch: "BATCH  2K16",
-      image: ayush,
-    },
-    {
-      name: "Deepanshu",
-      batch: "BATCH  2K16",
-      image: deepanshuSir,
-    },
-    {
-      name: "Manish",
-      batch: "BATCH  2K16",
-      image: manish,
-    },
-    {
-      name: "Paras",
-      batch: "BATCH  2K16",
-      image: nopic,
-    },
-    {
-      name: "Anika",
-      batch: "BATCH  2K16",
-      image: nopic,
-    },
-    {
-      name: "Mahima",
-      batch: "BATCH  2K16",
-      image: mahima,
-    },
-    {
-      name: "Rahul Sagar",
-      batch: "BATCH  2K17",
-      image: rahul,
-    },
-    {
-      name: "Ashwini",
-      batch: "BATCH  2K17",
-      image: nopic,
-    },
-    {
-      name: "Dhruv Balyan",
-      batch: "BATCH  2K17",
-      image: dhruv,
-    },
-    {
-      name: "Nidhi",
-      batch: "BATCH  2K17",
-      image: nopic,
-    },
-    {
-      name: "Hemant",
-      batch: "BATCH  2K17",
-      image: nopic,
-    },
-    {
-      name: "Rahul Jangra",
-      batch: "BATCH  2K17",
-      image: rahulJangra,
-    },
-    {
-      name: "Yugpurush",
-      batch: "BATCH  2K18",
-      image: yug,
-    },
-    {
-      name: "Rishabh",
-      batch: "BATCH  2K18",
-      image: rishabh,
-    },
-    {
-      name: "Shivam",
-      batch: "BATCH  2K18",
-      image: nopic,
-    },
-    {
-      name: "Abhishek",
-      batch: "BATCH  2K18",
-      image: abhishekSir,
-    },
-    {
-      name: "Dakshita",
-      batch: "BATCH  2K18",
-      image: nopic,
-    },
-    {
-      name: "Mansha",
-      batch: "BATCH  2K18",
-      image: nopic,
-    },
-    {
-      name: "Garima",
-      batch: "BATCH  2K18",
-      image: nopic,
-    },
-    {
-      name: "Vinayak Verma",
-      batch: "BATCH  2K19",
-      image: vinayak,
-    },
-    {
-      name: "Dimple",
-      batch: "BATCH  2K19",
-      image: dimple,
-    },
-    {
-      name: "Prateek",
-      batch: "BATCH  2K19",
-      image: prateek,
-    },
-    {
-      name: "Ashutosh Mishra",
-      batch: " BATCH  2K19",
-      image: ashutosh,
-    },
-    {
-      name: "Bahul Raina",
-      batch: "BATCH  2K19",
-      image: bahul,
-    },
-    {
-      name: "Khushboo",
-      batch: " BATCH  2K19",
-      image: khushbo,
-    },
-    {
-      name: "Tannu",
-      batch: "BATCH  2K19",
-      image: tanu,
-    },
-    {
-      name: "Kajal",
-      batch: "BATCH  2K19",
-      image: kajal,
-    },
-    {
-      name: "Anmol",
-      batch: "BATCH  2K20",
-
-      image: anmol,
-    },
-    {
-      name: "Deepanshu",
-      batch: "BATCH  2K20",
-      image: deepanshu,
-    },
-    {
-      name: "Ansh",
-      batch: "BATCH  2K20",
-      image: ansh,
-    },
-    {
-      name: "Prisha",
-      batch: "BATCH  2K20",
-      image: prisha,
-    },
-    {
-      name: "Prerna",
-      batch: "BATCH  2K20",
-      image: prerna,
-    },
-    {
-      name: "Aaryan Mandi",
-      batch: "BATCH  2K20",
-      image: aryan,
-    },
-    {
-      name: "Jatin",
-      batch: "BATCH  2K20",
-      image: jatin,
-    },
-    {
-      name: "Saksham Arora",
-      batch: "BATCH  2K20",
-      image: saksham,
-    },
-    {
-      name: "Rishita",
-      batch: "BATCH  2K20",
-      image: rishita,
-    },
-    {
-      name: "Mridul Birla",
-      batch: "BATCH  2K21",
-      image: mridul,
-    },
-    {
-      name: "Bhargavi Koul",
-      batch: "BATCH  2K21",
-      image: bhargavi,
-    },
-    {
-      name: "Khushi",
-      batch: "BATCH  2K21",
-      image: khushi,
-    },
-    {
-      name: "Apurva",
-      batch: "BATCH  2K21",
-      image: apurva,
-    },
-    {
-      name: "Kunal Chauhan",
-      batch: "BATCH  2K21",
-      image: kunalChauhan,
-    },
-    {
-      name: "Nishar",
-      batch: "BATCH  2K21",
-      image: nishar,
-    },
-    {
-      name: "Jayesh",
-      batch: "BATCH  2K21",
-      image: jayesh,
-    },
-    {
-      name: "Abhay",
-      batch: "BATCH  2K21",
-      image: abhay,
-    },
-    {
-      name: "Chitrak",
-      batch: "BATCH  2K21",
-      image: chitrak,
-    },
-    {
-      name: "Chirag Saxena",
-      batch: "BATCH  2K21",
-      image: nopic,
-    },
+    { name: "Kunal Bhardwaj", batch: "BATCH 2K14", image: Kunal },
+    { name: "Abhishek", batch: "BATCH 2K14", image: abhishekMittal },
+    { name: "Lakshay", batch: "BATCH 2K14", image: nopic },
+    { name: "Sapna", batch: "BATCH 2K14", image: nopic },
+    { name: "Harshita", batch: "BATCH 2K14", image: nopic },
+    { name: "Sunny Gaur", batch: "BATCH 2K14", image: nopic },
+    { name: "Utkarsh", batch: "BATCH 2K15", image: utkarsh },
+    { name: "Ayush", batch: "BATCH 2K16", image: ayush },
+    { name: "Deepanshu", batch: "BATCH 2K16", image: deepanshuSir },
+    { name: "Manish", batch: "BATCH 2K16", image: manish },
+    { name: "Paras", batch: "BATCH 2K16", image: nopic },
+    { name: "Anika", batch: "BATCH 2K16", image: nopic },
+    { name: "Mahima", batch: "BATCH 2K16", image: mahima },
+    { name: "Rahul Sagar", batch: "BATCH 2K17", image: rahul },
+    { name: "Ashwini", batch: "BATCH 2K17", image: nopic },
+    { name: "Dhruv Balyan", batch: "BATCH 2K17", image: dhruv },
+    { name: "Nidhi", batch: "BATCH 2K17", image: nopic },
+    { name: "Hemant", batch: "BATCH 2K17", image: nopic },
+    { name: "Rahul Jangra", batch: "BATCH 2K17", image: rahulJangra },
+    { name: "Yugpurush", batch: "BATCH 2K18", image: yug },
+    { name: "Rishabh", batch: "BATCH 2K18", image: rishabh },
+    { name: "Shivam", batch: "BATCH 2K18", image: nopic },
+    { name: "Abhishek", batch: "BATCH 2K18", image: abhishekSir },
+    { name: "Dakshita", batch: "BATCH 2K18", image: nopic },
+    { name: "Mansha", batch: "BATCH 2K18", image: nopic },
+    { name: "Garima", batch: "BATCH 2K18", image: nopic },
+    { name: "Vinayak Verma", batch: "BATCH 2K19", image: vinayak },
+    { name: "Dimple", batch: "BATCH 2K19", image: dimple },
+    { name: "Prateek", batch: "BATCH 2K19", image: prateek },
+    { name: "Ashutosh Mishra", batch: "BATCH 2K19", image: ashutosh },
+    { name: "Bahul Raina", batch: "BATCH 2K19", image: bahul },
+    { name: "Khushboo", batch: "BATCH 2K19", image: khushbo },
+    { name: "Tannu", batch: "BATCH 2K19", image: tanu },
+    { name: "Kajal", batch: "BATCH 2K19", image: kajal },
+    { name: "Anmol", batch: "BATCH 2K20", image: anmol },
+    { name: "Deepanshu", batch: "BATCH 2K20", image: deepanshu },
+    { name: "Ansh", batch: "BATCH 2K20", image: ansh },
+    { name: "Prisha", batch: "BATCH 2K20", image: prisha },
+    { name: "Prerna", batch: "BATCH 2K20", image: prerna },
+    { name: "Aaryan Mandi", batch: "BATCH 2K20", image: aryan },
+    { name: "Jatin", batch: "BATCH 2K20", image: jatin },
+    { name: "Saksham Arora", batch: "BATCH 2K20", image: saksham },
+    { name: "Rishita", batch: "BATCH 2K20", image: rishita },
+    { name: "Mridul Birla", batch: "BATCH 2K21", image: mridul },
+    { name: "Bhargavi Koul", batch: "BATCH 2K21", image: bhargavi },
+    { name: "Khushi", batch: "BATCH 2K21", image: khushi },
+    { name: "Apurva", batch: "BATCH 2K21", image: apurva },
+    { name: "Kunal Chauhan", batch: "BATCH 2K21", image: kunalChauhan },
+    { name: "Nishar", batch: "BATCH 2K21", image: nishar },
+    { name: "Jayesh", batch: "BATCH 2K21", image: jayesh },
+    { name: "Abhay", batch: "BATCH 2K21", image: abhay },
+    { name: "Chitrak", batch: "BATCH 2K21", image: chitrak },
+    { name: "Chirag Saxena", batch: "BATCH 2K21", image: nopic },
   ];
 
   const displayedAlumni = showAll ? alumni : alumni.slice(0, 8);
@@ -339,17 +126,19 @@ export function Alumini() {
                 <img
                   src={alumnus.image}
                   alt={alumnus.name}
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) =>
+                    ((e.currentTarget as HTMLImageElement).src = nopic)
+                  }
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
               </div>
               <div className="p-6">
                 <h3 className="font-bold text-xl mb-1">{alumnus.name}</h3>
-                <p className="text-orange-600 font-semibold text-sm mb-2">
+                <p className="text-orange-600 font-semibold text-sm">
                   {alumnus.batch}
                 </p>
-                {/* <p className="text-gray-700 font-semibold mb-3">
-                  {alumnus.asGoonjMember}
-                </p> */}
               </div>
             </div>
           ))}
@@ -361,7 +150,7 @@ export function Alumini() {
               onClick={() => setShowAll(true)}
               className="bg-orange-600 text-white px-8 py-3 rounded-full hover:bg-orange-700 transition-colors"
             >
-              See More Alumni ({alumni.length - 6} more)
+              See More Alumni
             </button>
           </div>
         )}

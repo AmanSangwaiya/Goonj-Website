@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { useState, useEffect } from "react";
 import { Plus } from "lucide-react";
+
 import g1 from "../../assets/1.png";
 import g2 from "../../assets/2.jpg";
 import g3 from "../../assets/3.jpg";
@@ -77,302 +78,97 @@ export function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const galleryImages = [
-    {
-      src: g1,
-      alt: "Orchestra Performance",
-    },
-    {
-      src: g2,
-      alt: "Students Practicing",
-    },
-    {
-      src: g3,
-      alt: "Choir Singing",
-    },
-    {
-      src: g4,
-      alt: "Guitar Practice",
-    },
-    {
-      src: g5,
-      alt: "Studio Recording",
-    },
-    {
-      src: g6,
-      alt: "Grand Performance",
-    },
-    {
-      src: g7,
-      alt: "Violin Performance",
-    },
-    {
-      src: g8,
-      alt: "Concert Audience",
-    },
-    {
-      src: g9,
-      alt: "Piano Recital",
-    },
-    {
-      src: g10,
-      alt: "Drum Performance",
-    },
-    {
-      src: g11,
-      alt: "Band Rehearsal",
-    },
-    {
-      src: g12,
-      alt: "String Ensemble",
-    },
-    {
-      src: g13,
-      alt: "Microphone on Stage",
-    },
-    {
-      src: g14,
-      alt: "Saxophone Player",
-    },
-    {
-      src: g15,
-      alt: "Concert Lights",
-    },
-    {
-      src: g16,
-      alt: "Sheet Music",
-    },
-    {
-      src: g17,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g18,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g19,
-      alt: "Sheet Music",
-    },
-    {
-      src: g20,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g21,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g22,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g23,
-      alt: "Sheet Music",
-    },
-    {
-      src: g24,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g25,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g26,
-      alt: "Sheet Music",
-    },
-    {
-      src: g27,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g28,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g29,
-      alt: "Sheet Music",
-    },
-    {
-      src: g30,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g31,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g32,
-      alt: "Sheet Music",
-    },
-    {
-      src: g33,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g34,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g35,
-      alt: "Sheet Music",
-    },
-    {
-      src: g36,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g37,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g38,
-      alt: "Sheet Music",
-    },
-    {
-      src: g39,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g40,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g41,
-      alt: "Sheet Music",
-    },
-    {
-      src: g42,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g43,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g44,
-      alt: "Sheet Music",
-    },
-    {
-      src: g45,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g46,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g47,
-      alt: "Sheet Music",
-    },
-    {
-      src: g48,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g49,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g50,
-      alt: "Sheet Music",
-    },
-    {
-      src: g51,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g52,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g53,
-      alt: "Sheet Music",
-    },
-    {
-      src: g54,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g55,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g56,
-      alt: "Sheet Music",
-    },
-    {
-      src: g57,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g58,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g59,
-      alt: "Sheet Music",
-    },
-    {
-      src: g60,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g61,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g62,
-      alt: "Sheet Music",
-    },
-    {
-      src: g63,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g64,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g65,
-      alt: "Sheet Music",
-    },
-    {
-      src: g66,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g67,
-      alt: "Trumpet Section",
-    },
-    {
-      src: g68,
-      alt: "Acoustic Guitar",
-    },
-    {
-      src: g69,
-      alt: "Trumpet Section",
-    },
-  ];
+    g1,
+    g2,
+    g3,
+    g4,
+    g5,
+    g6,
+    g7,
+    g8,
+    g9,
+    g10,
+    g11,
+    g12,
+    g13,
+    g14,
+    g15,
+    g16,
+    g17,
+    g18,
+    g19,
+    g20,
+    g21,
+    g22,
+    g23,
+    g24,
+    g25,
+    g26,
+    g27,
+    g28,
+    g29,
+    g30,
+    g31,
+    g32,
+    g33,
+    g34,
+    g35,
+    g36,
+    g37,
+    g38,
+    g39,
+    g40,
+    g41,
+    g42,
+    g43,
+    g44,
+    g45,
+    g46,
+    g47,
+    g48,
+    g49,
+    g50,
+    g51,
+    g52,
+    g53,
+    g54,
+    g55,
+    g56,
+    g57,
+    g58,
+    g59,
+    g60,
+    g61,
+    g62,
+    g63,
+    g64,
+    g65,
+    g66,
+    g67,
+    g68,
+    g69,
+  ].map((src, index) => ({
+    src,
+    alt: `Gallery Image ${index + 1}`,
+  }));
 
-  const allImages = galleryImages;
-  const displayedImages = showAll ? allImages : allImages.slice(0, 9);
+  const displayedImages = showAll ? galleryImages : galleryImages.slice(0, 9);
 
   // Keyboard navigation
   useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (!isOpen) return;
+    if (!isOpen) return;
 
+    const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsOpen(false);
       if (e.key === "ArrowRight")
-        setCurrentIndex((i) => (i + 1) % allImages.length);
+        setCurrentIndex((i) => (i + 1) % galleryImages.length);
       if (e.key === "ArrowLeft")
-        setCurrentIndex((i) => (i === 0 ? allImages.length - 1 : i - 1));
+        setCurrentIndex((i) => (i === 0 ? galleryImages.length - 1 : i - 1));
     };
 
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [isOpen, allImages.length]);
+  }, [isOpen, galleryImages.length]);
 
   return (
     <section id="gallery" className="py-20 bg-white">
@@ -397,6 +193,8 @@ export function Gallery() {
               <ImageWithFallback
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
@@ -404,24 +202,23 @@ export function Gallery() {
           ))}
         </div>
 
-        {!showAll && allImages.length > 9 && (
+        {!showAll && (
           <div className="text-center">
             <button
               onClick={() => setShowAll(true)}
               className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors inline-flex items-center gap-2"
             >
               <Plus className="w-5 h-5" />
-              See More ({allImages.length - 9})
+              See More ({galleryImages.length - 9})
             </button>
           </div>
         )}
       </div>
 
-      {/* IMAGE POPUP */}
+      {/* IMAGE MODAL */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4">
           <div className="relative bg-black rounded-xl shadow-2xl max-w-4xl w-full p-2">
-            {/* Close */}
             <button
               onClick={() => setIsOpen(false)}
               className="absolute -top-4 -right-4 bg-white text-black rounded-full p-2 shadow-lg hover:scale-110 transition"
@@ -429,35 +226,13 @@ export function Gallery() {
               ✕
             </button>
 
-            <div className="relative flex items-center justify-center">
-              <img
-                src={allImages[currentIndex].src}
-                alt={allImages[currentIndex].alt}
-                className="max-h-[75vh] w-full object-contain rounded-lg"
-              />
-
-              <button
-                onClick={() =>
-                  setCurrentIndex((i) =>
-                    i === 0 ? allImages.length - 1 : i - 1
-                  )
-                }
-                className="absolute left-2 bg-black/70 text-white text-2xl px-3 py-1 rounded-full"
-              >
-                ‹
-              </button>
-
-              <button
-                onClick={() =>
-                  setCurrentIndex((i) =>
-                    i === allImages.length - 1 ? 0 : i + 1
-                  )
-                }
-                className="absolute right-2 bg-black/70 text-white text-2xl px-3 py-1 rounded-full"
-              >
-                ›
-              </button>
-            </div>
+            <img
+              src={galleryImages[currentIndex].src}
+              alt={galleryImages[currentIndex].alt}
+              loading="lazy"
+              decoding="async"
+              className="max-h-[75vh] w-full object-contain rounded-lg"
+            />
           </div>
         </div>
       )}

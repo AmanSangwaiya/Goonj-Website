@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+/* images */
 import lokesh from "../../assets/lokesh.jpeg";
 import twinkle from "../../assets/twinkle.jpeg";
 import harpreet from "../../assets/harpreet.jpeg";
@@ -35,6 +37,7 @@ import harshit from "../../assets/harshit.jpg";
 import pavnesh from "../../assets/pavnesh.jpeg";
 import vipul from "../../assets/vipul.png";
 import akshay from "../../assets/akshay.png";
+
 export function Team() {
   const [showAll, setShowAll] = useState(false);
 
@@ -54,7 +57,7 @@ export function Team() {
     {
       name: "Himanshu",
       role: "Management Coordinator",
-      instrument: " ",
+      instrument: "",
       image: himanshu,
     },
     {
@@ -77,32 +80,22 @@ export function Team() {
     },
     {
       name: "Harpreet",
-      role: " ",
+      role: "",
       instrument: "Vocalist & Guitarist",
       image: harpreet,
     },
-    {
-      name: "Aditi",
-      role: "",
-      instrument: "Vocalist",
-      image: aditi,
-    },
+    { name: "Aditi", role: "", instrument: "Vocalist", image: aditi },
     {
       name: "Ankit",
       role: "",
       instrument: "Guitarist & Vocalist",
       image: ankit,
     },
-    {
-      name: "Nikita",
-      role: "",
-      instrument: "Vocalist",
-      image: nikita,
-    },
+    { name: "Nikita", role: "", instrument: "Vocalist", image: nikita },
     {
       name: "Harshit Gupta",
       role: "",
-      instrument: "Management ",
+      instrument: "Management",
       image: harshit,
     },
     {
@@ -111,148 +104,48 @@ export function Team() {
       instrument: "Vocalist",
       image: dikshant,
     },
-    {
-      name: "Arun",
-      role: "",
-      instrument: "Vocalist",
-      image: arun,
-    },
-    {
-      name: "Aastha",
-      role: "",
-      instrument: "Vocalist",
-      image: aastha,
-    },
-    {
-      name: "Aman",
-      role: "",
-      instrument: "Drummer",
-      image: aman,
-    },
+    { name: "Arun", role: "", instrument: "Vocalist", image: arun },
+    { name: "Aastha", role: "", instrument: "Vocalist", image: aastha },
+    { name: "Aman", role: "", instrument: "Drummer", image: aman },
     {
       name: "Manthan",
       role: "",
       instrument: "Vocalist & Guitarist",
       image: manthan,
     },
-    {
-      name: "Saman",
-      role: "",
-      instrument: "Vocalist",
-      image: saman,
-    },
-    {
-      name: "Omi",
-      role: "",
-      instrument: "Management ",
-      image: omi,
-    },
-    {
-      name: "Sahil",
-      role: "",
-      instrument: "Management ",
-      image: sahil,
-    },
-    {
-      name: " Janvi",
-      role: " ",
-      instrument: "Management ",
-      image: janvi,
-    },
-    {
-      name: "Raj Kumar ",
-      role: "",
-      instrument: "Vocalist",
-      image: rajkumar,
-    },
-    {
-      name: "Ayushi",
-      role: "",
-      instrument: "Vocalist",
-      image: ayushi,
-    },
-    {
-      name: "Rishabh",
-      role: "",
-      instrument: "Guitarist",
-      image: rishabh,
-    },
-    {
-      name: "Lavisha",
-      role: "",
-      instrument: "Vocalist",
-      image: lavisha,
-    },
-    {
-      name: "Preet ",
-      role: "",
-      instrument: "Vocalist",
-      image: preet,
-    },
-    {
-      name: "Ambika",
-      role: "",
-      instrument: "Vocalist",
-      image: ambika,
-    },
-    {
-      name: "Nandini",
-      role: "",
-      instrument: "Vocalist",
-      image: nandini,
-    },
+    { name: "Saman", role: "", instrument: "Vocalist", image: saman },
+    { name: "Omi", role: "", instrument: "Management", image: omi },
+    { name: "Sahil", role: "", instrument: "Management", image: sahil },
+    { name: "Janvi", role: "", instrument: "Management", image: janvi },
+    { name: "Raj Kumar", role: "", instrument: "Vocalist", image: rajkumar },
+    { name: "Ayushi", role: "", instrument: "Vocalist", image: ayushi },
+    { name: "Rishabh", role: "", instrument: "Guitarist", image: rishabh },
+    { name: "Lavisha", role: "", instrument: "Vocalist", image: lavisha },
+    { name: "Preet", role: "", instrument: "Vocalist", image: preet },
+    { name: "Ambika", role: "", instrument: "Vocalist", image: ambika },
+    { name: "Nandini", role: "", instrument: "Vocalist", image: nandini },
     {
       name: "Dharmendra",
       role: "",
       instrument: "Lyricist & Rapper",
       image: dharmendar,
     },
-    {
-      name: "Mahesh",
-      role: "",
-      instrument: "Keyboard Player",
-      image: mahesh,
-    },
-    {
-      name: "Rupen",
-      role: "",
-      instrument: "Vocalist",
-      image: rupen,
-    },
-    {
-      name: "Sehrish",
-      role: "",
-      instrument: "Vocalist",
-      image: sehrish,
-    },
-    {
-      name: "Pavnesh",
-      role: "",
-      instrument: "Rapper",
-      image: pavnesh,
-    },
-    {
-      name: "Harshpreet",
-      role: "",
-      instrument: "Flutist ",
-      image: harshpreet,
-    },
+    { name: "Mahesh", role: "", instrument: "Keyboard Player", image: mahesh },
+    { name: "Rupen", role: "", instrument: "Vocalist", image: rupen },
+    { name: "Sehrish", role: "", instrument: "Vocalist", image: sehrish },
+    { name: "Pavnesh", role: "", instrument: "Rapper", image: pavnesh },
+    { name: "Harshpreet", role: "", instrument: "Flutist", image: harshpreet },
     {
       name: "Abhishek Sinha",
       role: "",
-      instrument: "Vocalist ",
+      instrument: "Vocalist",
       image: abhishek,
     },
-    {
-      name: "Mohit Jangra",
-      role: "",
-      instrument: "Vocalist ",
-      image: mohit,
-    },
+    { name: "Mohit Jangra", role: "", instrument: "Vocalist", image: mohit },
     {
       name: "Sachin Dadarwal",
       role: "",
-      instrument: "Vocalist ",
+      instrument: "Vocalist",
       image: sachin,
     },
   ];
@@ -279,46 +172,42 @@ export function Team() {
                 <img
                   src={member.image}
                   alt={member.name}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
               </div>
+
               <div className="p-6 text-center">
                 <h3 className="font-bold text-xl mb-1">{member.name}</h3>
-                <p className="text-purple-600 font-semibold mb-1">
-                  {member.role}
-                </p>
+                {member.role && (
+                  <p className="text-purple-600 font-semibold mb-1">
+                    {member.role}
+                  </p>
+                )}
                 <p className="text-gray-600">{member.instrument}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {!showAll && (
-          <div className="text-center mt-12">
-            <button
-              onClick={() => setShowAll(true)}
-              className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors"
-            >
-              See More Team Members
-            </button>
-          </div>
-        )}
-
-        {showAll && (
-          <div className="text-center mt-12">
-            <button
-              onClick={() => {
-                setShowAll(false);
-                document
-                  .getElementById("team")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="bg-gray-600 text-white px-8 py-3 rounded-full hover:bg-gray-700 transition-colors"
-            >
-              Show Less
-            </button>
-          </div>
-        )}
+        <div className="text-center mt-12">
+          <button
+            onClick={() => {
+              setShowAll(!showAll);
+              document
+                .getElementById("team")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className={`px-8 py-3 rounded-full transition-colors ${
+              showAll
+                ? "bg-gray-600 text-white hover:bg-gray-700"
+                : "bg-purple-600 text-white hover:bg-purple-700"
+            }`}
+          >
+            {showAll ? "Show Less" : "See More Team Members"}
+          </button>
+        </div>
       </div>
     </section>
   );
