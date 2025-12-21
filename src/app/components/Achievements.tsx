@@ -3,6 +3,14 @@ import { Trophy, Award, Medal, Star } from "lucide-react";
 export function Achievements() {
   const achievements = [
     {
+      icon: Star,
+      year: "2025",
+      title: "Selected for Inter-University North Zone Competition",
+      description:
+        "Goonj claimed victory at Rhythm 2025 with outstanding performances across various categories. This achievement qualified the team to represent DCRUST at the Inter-University North Zone Competition in 2026, organized by the Association of Indian Universities (AIU).",
+      category: "Competition",
+    },
+    {
       icon: Trophy,
       year: "2025",
       title: "RHYTHM 2025",
@@ -102,6 +110,15 @@ export function Achievements() {
         "We had the opportunity to represent our university at NIFTEM, Kundli during 2018 and 2024, where we showcased our talent, gained valuable exposure, and enriched our experience through meaningful participation and learning.",
       category: "Representation",
     },
+    {
+      icon: Star,
+      year: "2024",
+      title: "Selected for Inter-University North Zone Competition",
+      description:
+        "Continuing the winning legacy, Goonj emerged victorious at Rhythm 2024, earning top honors across multiple musical categories. This success secured selection to represent DCRUST at the Inter-University North Zone Competition in 2025 under the Association of Indian Universities (AIU).",
+      category: "Competition",
+    },
+
     {
       icon: Medal,
       year: "2023",

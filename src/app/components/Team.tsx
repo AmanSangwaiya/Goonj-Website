@@ -96,7 +96,7 @@ export function Team() {
     {
       name: "Nikita",
       role: "",
-      instrument: "Guitarist & Vocalist",
+      instrument: "Vocalist",
       image: nikita,
     },
     {
@@ -204,7 +204,7 @@ export function Team() {
     {
       name: "Dharmendra",
       role: "",
-      instrument: "Rapper",
+      instrument: "Lyricist & Rapper",
       image: dharmendar,
     },
     {

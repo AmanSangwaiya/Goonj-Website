@@ -40,60 +40,133 @@ export function Alumini() {
   const alumni = [
     {
       name: "Kunal Bhardwaj",
-      batch: "BATCH  2K17",
-      asGoonjMember: "Flautist",
+      batch: "BATCH  2K14",
       image: Kunal,
-      // quote:
-      //   "Harmony Society was where I discovered my passion for orchestral music. The experiences here shaped my entire career.",
+    },
+    {
+      name: "Abhishek",
+      batch: "BATCH  2K14",
+      image: Kunal,
+    },
+    {
+      name: "Lakshay",
+      batch: "BATCH  2K14",
+      image: Kunal,
+    },
+    {
+      name: "Sapna",
+      batch: "BATCH  2K14",
+      image: Kunal,
+    },
+    {
+      name: "Harshita",
+      batch: "BATCH  2K14",
+      image: Kunal,
+    },
+    {
+      name: "Sunny Gaur",
+      batch: "BATCH  2K14",
+      image: Kunal,
+    },
+    {
+      name: "Utkarsh",
+      batch: "BATCH  2K15",
+      image: Kunal,
     },
     {
       name: "Ayush",
-      batch: "BATCH  2K18",
-      asGoonjMember: "Vocalist",
+      batch: "BATCH  2K16",
       image: ayush,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Deepanshu",
-      batch: "BATCH  2K18",
-      asGoonjMember: "Guitarist",
+      batch: "BATCH  2K16",
       image: deepanshuSir,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
-      name: "Abhishek Aggarwal",
-      batch: "BATCH  2K18",
-      asGoonjMember: "Vocalist & Instrumentalist",
-      image: abhishekSir,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
+      name: "Manish",
+      batch: "BATCH  2K16",
+      image: ayush,
+    },
+    {
+      name: "Paras",
+      batch: "BATCH  2K16",
+      image: ayush,
+    },
+    {
+      name: "Anika",
+      batch: "BATCH  2K16",
+      image: ayush,
+    },
+    {
+      name: "Mahima",
+      batch: "BATCH  2K16",
+      image: ayush,
+    },
+    {
+      name: "Rahul Sagar",
+      batch: "BATCH  2K17",
+      image: rahul,
+    },
+    {
+      name: "Ashwini",
+      batch: "BATCH  2K17",
+      image: rahul,
+    },
+    {
+      name: "Dhruv Balyan",
+      batch: "BATCH  2K17",
+      image: rahul,
+    },
+    {
+      name: "Nidhi",
+      batch: "BATCH  2K17",
+      image: rahul,
+    },
+    {
+      name: "Hemant",
+      batch: "BATCH  2K17",
+      image: rahul,
+    },
+    {
+      name: "Rahul Jangra",
+      batch: "BATCH  2K17",
+      image: rahul,
     },
     {
       name: "Yugpurush",
       batch: "BATCH  2K18",
-      asGoonjMember: "Vocalist",
       image: yug,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
-    },
-
-    {
-      name: "Rahul Sagar",
-      batch: "BATCH  2K18",
-      asGoonjMember: "Vocalist",
-      image: rahul,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
-      name: "Mahima Dahiya",
+      name: "Rishabh",
       batch: "BATCH  2K18",
-      asGoonjMember: "Vocalist",
-      image: mahima,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
+      image: yug,
+    },
+    {
+      name: "Shivam",
+      batch: "BATCH  2K18",
+      image: yug,
+    },
+    {
+      name: "Abhishek",
+      batch: "BATCH  2K18",
+      image: abhishekSir,
+    },
+    {
+      name: "Dakshita",
+      batch: "BATCH  2K18",
+      image: yug,
+    },
+    {
+      name: "Mansha",
+      batch: "BATCH  2K18",
+      image: yug,
+    },
+    {
+      name: "Garima",
+      batch: "BATCH  2K18",
+      image: yug,
     },
     {
       name: "Vinayak Verma",
