@@ -76,6 +76,8 @@ export function Gallery() {
   const [showAll, setShowAll] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [touchEndX, setTouchEndX] = useState(0);
 
   const galleryImages = [
     g1,
@@ -147,10 +149,7 @@ export function Gallery() {
     g67,
     g68,
     g69,
-  ].map((src, index) => ({
-    src,
-    alt: `Gallery Image ${index + 1}`,
-  }));
+  ].map((src, index) => ({ src, alt: `Gallery Image ${index + 1}` }));
 
   const displayedImages = showAll ? galleryImages : galleryImages.slice(0, 9);
 
@@ -169,6 +168,15 @@ export function Gallery() {
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
   }, [isOpen, galleryImages.length]);
+
+  // Swipe navigation
+  const handleTouchEnd = () => {
+    const swipeDistance = touchStartX - touchEndX;
+    if (swipeDistance > 50)
+      setCurrentIndex((i) => (i + 1) % galleryImages.length); // swipe left
+    if (swipeDistance < -50)
+      setCurrentIndex((i) => (i === 0 ? galleryImages.length - 1 : i - 1)); // swipe right
+  };
 
   return (
     <section id="gallery" className="py-20 bg-white">
@@ -218,7 +226,12 @@ export function Gallery() {
       {/* IMAGE MODAL */}
       {isOpen && (
         <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center px-4">
-          <div className="relative bg-black rounded-xl shadow-2xl max-w-4xl w-full p-2">
+          <div
+            className="relative bg-black rounded-xl shadow-2xl max-w-4xl w-full p-2"
+            onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
+            onTouchMove={(e) => setTouchEndX(e.touches[0].clientX)}
+            onTouchEnd={handleTouchEnd}
+          >
             <button
               onClick={() => setIsOpen(false)}
               className="absolute -top-4 -right-4 bg-white text-black rounded-full p-2 shadow-lg hover:scale-110 transition"
@@ -233,6 +246,27 @@ export function Gallery() {
               decoding="async"
               className="max-h-[75vh] w-full object-contain rounded-lg"
             />
+
+            {/* Navigation buttons */}
+            <button
+              onClick={() =>
+                setCurrentIndex((i) =>
+                  i === 0 ? galleryImages.length - 1 : i - 1
+                )
+              }
+              className="absolute left-2 bg-black/70 text-white text-2xl px-3 py-1 rounded-full"
+            >
+              ‹
+            </button>
+
+            <button
+              onClick={() =>
+                setCurrentIndex((i) => (i + 1) % galleryImages.length)
+              }
+              className="absolute right-2 bg-black/70 text-white text-2xl px-3 py-1 rounded-full"
+            >
+              ›
+            </button>
           </div>
         </div>
       )}
