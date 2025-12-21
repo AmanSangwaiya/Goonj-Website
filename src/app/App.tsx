@@ -1,28 +1,28 @@
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Events } from './components/Events';
-import { Team } from './components/Team';
-import { TeacherCoordinator } from './components/TeacherCoordinator';
-import { Alumini } from './components/Alumini';
-import { Achievements } from './components/Achievements';
-import { Gallery } from './components/Gallery';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import { Routes, Route } from "react-router-dom";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+
+// Import pages
+import Home from "../pages/Home";
+import EventsPage from "../pages/EventsPage";
+import TeamPage from "../pages/TeamPage";
+import GalleryPage from "../pages/GalleryPage";
+import AlumniPage from "../pages/AlumniPage";
+import AchievementsPage from "../pages/AchievementsPage";
+import ContactPage from "../pages/ContactPage";
 
 export default function App() {
   return (
     <div className="min-h-screen">
       <Header />
-      <Hero />
-      <About />
-      <Events />
-      <Team />
-      <TeacherCoordinator />
-      <Alumini />
-      <Achievements />
-      <Gallery />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<EventsPage />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/alumni" element={<AlumniPage />} />
+        <Route path="/achievements" element={<AchievementsPage />} />
+      </Routes>
       <Footer />
     </div>
   );

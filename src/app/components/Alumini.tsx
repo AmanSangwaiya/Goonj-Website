@@ -34,6 +34,13 @@ import deepanshuSir from "../../assets/deepanshuSir.png";
 import prisha from "../../assets/prisha.png";
 import dimple from "../../assets/dimple.png";
 import mahima from "../../assets/mahima.png";
+import nopic from "../../assets/nopic.jpg";
+import abhishekMittal from "../../assets/abhishekMittal.png";
+import dhruv from "../../assets/dhruv.png";
+import manish from "../../assets/manish.png";
+import utkarsh from "../../assets/utkarsh.png";
+import rahulJangra from "../../assets/rahuljangra.png";
+
 export function Alumini() {
   const [showAll, setShowAll] = useState(false);
 
@@ -46,32 +53,32 @@ export function Alumini() {
     {
       name: "Abhishek",
       batch: "BATCH  2K14",
-      image: Kunal,
+      image: abhishekMittal,
     },
     {
       name: "Lakshay",
       batch: "BATCH  2K14",
-      image: Kunal,
+      image: nopic,
     },
     {
       name: "Sapna",
       batch: "BATCH  2K14",
-      image: Kunal,
+      image: nopic,
     },
     {
       name: "Harshita",
       batch: "BATCH  2K14",
-      image: Kunal,
+      image: nopic,
     },
     {
       name: "Sunny Gaur",
       batch: "BATCH  2K14",
-      image: Kunal,
+      image: nopic,
     },
     {
       name: "Utkarsh",
       batch: "BATCH  2K15",
-      image: Kunal,
+      image: utkarsh,
     },
     {
       name: "Ayush",
@@ -86,22 +93,22 @@ export function Alumini() {
     {
       name: "Manish",
       batch: "BATCH  2K16",
-      image: ayush,
+      image: manish,
     },
     {
       name: "Paras",
       batch: "BATCH  2K16",
-      image: ayush,
+      image: nopic,
     },
     {
       name: "Anika",
       batch: "BATCH  2K16",
-      image: ayush,
+      image: nopic,
     },
     {
       name: "Mahima",
       batch: "BATCH  2K16",
-      image: ayush,
+      image: mahima,
     },
     {
       name: "Rahul Sagar",
@@ -111,27 +118,27 @@ export function Alumini() {
     {
       name: "Ashwini",
       batch: "BATCH  2K17",
-      image: rahul,
+      image: nopic,
     },
     {
       name: "Dhruv Balyan",
       batch: "BATCH  2K17",
-      image: rahul,
+      image: dhruv,
     },
     {
       name: "Nidhi",
       batch: "BATCH  2K17",
-      image: rahul,
+      image: nopic,
     },
     {
       name: "Hemant",
       batch: "BATCH  2K17",
-      image: rahul,
+      image: nopic,
     },
     {
       name: "Rahul Jangra",
       batch: "BATCH  2K17",
-      image: rahul,
+      image: rahulJangra,
     },
     {
       name: "Yugpurush",
@@ -141,12 +148,12 @@ export function Alumini() {
     {
       name: "Rishabh",
       batch: "BATCH  2K18",
-      image: yug,
+      image: rishabh,
     },
     {
       name: "Shivam",
       batch: "BATCH  2K18",
-      image: yug,
+      image: nopic,
     },
     {
       name: "Abhishek",
@@ -156,233 +163,153 @@ export function Alumini() {
     {
       name: "Dakshita",
       batch: "BATCH  2K18",
-      image: yug,
+      image: nopic,
     },
     {
       name: "Mansha",
       batch: "BATCH  2K18",
-      image: yug,
+      image: nopic,
     },
     {
       name: "Garima",
       batch: "BATCH  2K18",
-      image: yug,
+      image: nopic,
     },
     {
       name: "Vinayak Verma",
       batch: "BATCH  2K19",
-      asGoonjMember: "Vocalist ",
       image: vinayak,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
-    },
-    {
-      name: "Rishabh Indora",
-      batch: "BATCH  2K19",
-      asGoonjMember: "Keyboard Player & Beatboxer",
-      image: rishabh,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Dimple",
       batch: "BATCH  2K19",
-      asGoonjMember: "Vocalist",
       image: dimple,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Prateek",
       batch: "BATCH  2K19",
-      asGoonjMember: "Keyboard Player",
       image: prateek,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Ashutosh Mishra",
       batch: " BATCH  2K19",
-      asGoonjMember: "Vocalist",
       image: ashutosh,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Bahul Raina",
       batch: "BATCH  2K19",
-      asGoonjMember: "Vocalist",
       image: bahul,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Khushboo",
       batch: " BATCH  2K19",
-      asGoonjMember: "Vocalist",
       image: khushbo,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Tannu",
       batch: "BATCH  2K19",
-      asGoonjMember: "Vocalist",
       image: tanu,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Kajal",
       batch: "BATCH  2K19",
-      asGoonjMember: "Keyboard Player",
       image: kajal,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Anmol",
       batch: "BATCH  2K20",
-      asGoonjMember: "Guitarist",
+
       image: anmol,
-      quote:
-        "Harmony Society taught me the healing power of music. Now I use it to help people every day in my practice.",
     },
     {
       name: "Deepanshu",
       batch: "BATCH  2K20",
-      asGoonjMember: "Vocalist",
       image: deepanshu,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Ansh",
       batch: "BATCH  2K20",
-      asGoonjMember: "Drummer",
       image: ansh,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Prisha",
       batch: "BATCH  2K20",
-      asGoonjMember: "Vocalist & Keyboard Player",
       image: prisha,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Prerna",
       batch: "BATCH  2K20",
-      asGoonjMember: "Vocalist",
       image: prerna,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Aaryan Mandi",
       batch: "BATCH  2K20",
-      asGoonjMember: "Management",
       image: aryan,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Jatin",
       batch: "BATCH  2K20",
-      asGoonjMember: "Management",
       image: jatin,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Saksham Arora",
       batch: "BATCH  2K20",
-      asGoonjMember: "Management",
       image: saksham,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Rishita",
       batch: "BATCH  2K20",
-      asGoonjMember: "Vocalist",
       image: rishita,
-      quote:
-        "Leading ensembles here prepared me for my dream job of inspiring young musicians as a conductor.",
     },
     {
       name: "Mridul Birla",
       batch: "BATCH  2K21",
-      asGoonjMember: "Vocalist & Guitarist",
       image: mridul,
-      quote:
-        "The collaborative spirit at Harmony Society taught me how to blend different musical styles and work with diverse artists.",
     },
     {
       name: "Bhargavi Koul",
       batch: "BATCH  2K21",
-      asGoonjMember: "Vocalist",
       image: bhargavi,
-      quote:
-        "My first solo performance was at a Harmony Society event. That confidence boost was invaluable for my journey to the opera stage.",
     },
     {
       name: "Khushi",
       batch: "BATCH  2K21",
-      asGoonjMember: "Vocalist",
       image: khushi,
-      quote:
-        "Leading the jazz ensemble here prepared me for the fast-paced world of Broadway. Forever grateful for those jam sessions!",
     },
     {
       name: "Apurva",
       batch: "BATCH  2K21",
-      asGoonjMember: "Vocalist",
       image: apurva,
-      quote:
-        "Harmony Society encouraged me to experiment with composition. Now I'm scoring films for major studios!",
     },
     {
       name: "Kunal Chauhan",
       batch: "BATCH  2K21",
-      asGoonjMember: "Management & Guitarist",
       image: kunalChauhan,
-      quote:
-        "The supportive community here helped me overcome performance anxiety. Now I perform for audiences of thousands.",
     },
     {
       name: "Nishar",
       batch: "BATCH  2K21",
-      asGoonjMember: "Management",
       image: nishar,
-      quote:
-        "Harmony Society showed me the joy of sharing music with others. Now I reach millions through my educational content.",
     },
     {
       name: "Jayesh",
       batch: "BATCH  2K21",
-      asGoonjMember: "Management",
       image: jayesh,
-      quote:
-        "From campus performances to world tours - it all started at Harmony Society. Best musical family ever!",
     },
     {
       name: "Abhay",
       batch: "BATCH  2K21",
-      asGoonjMember: "Management",
       image: abhay,
-      quote:
-        "The diverse musical experiences here opened my mind to fusion styles that define my unique sound today.",
     },
     {
       name: "Chitrak",
       batch: "BATCH  2K21",
-      asGoonjMember: "Flautist & Management",
       image: chitrak,
-      quote:
-        "Working on Harmony Society's recordings taught me the technical skills I use daily with world-famous artists.",
+    },
+    {
+      name: "Chirag Saxena",
+      batch: "BATCH  2K21",
+      image: nopic,
     },
   ];
 
