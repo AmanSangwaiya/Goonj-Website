@@ -11,7 +11,7 @@ import anmol from "../../assets/Anmol.jpg";
 import chitrak from "../../assets/chitrak.jpg";
 import jatin from "../../assets/jatin.jpg";
 import mridul from "../../assets/mridul.png";
-import deepanshu from "../../assets/deepanshu.jpg";
+import deepanshu1 from "../../assets/deepanshu1.jpg";
 import rishita from "../../assets/rishita.png";
 import abhay from "../../assets/abhay.png";
 import saksham from "../../assets/saksham.jpg";
@@ -80,7 +80,7 @@ export function Alumini() {
     { name: "Tannu", batch: "BATCH 2K19", image: tanu },
     { name: "Kajal", batch: "BATCH 2K19", image: kajal },
     { name: "Anmol", batch: "BATCH 2K20", image: anmol },
-    { name: "Deepanshu", batch: "BATCH 2K20", image: deepanshu },
+    { name: "Deepanshu", batch: "BATCH 2K20", image: deepanshu1 },
     { name: "Ansh", batch: "BATCH 2K20", image: ansh1 },
     { name: "Prisha", batch: "BATCH 2K20", image: prisha },
     { name: "Prerna", batch: "BATCH 2K20", image: prerna },
