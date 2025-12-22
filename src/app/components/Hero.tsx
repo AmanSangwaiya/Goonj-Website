@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ChevronLeft, ChevronRight, ArrowDown } from "lucide-react";
 
-// 👇 No imports from src/assets anymore
+// Images from public folder
 const images = [
   "/bg.jpg",
   "/41.jpg",
@@ -19,7 +19,6 @@ const images = [
 export function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Scroll indicator
   const [showScrollIcon, setShowScrollIcon] = useState(true);
   const [hasScrolledOnce, setHasScrolledOnce] = useState(false);
 
@@ -30,13 +29,11 @@ export function Hero() {
   const prevSlide = () =>
     setCurrentIndex((p) => (p === 0 ? images.length - 1 : p - 1));
 
-  // Auto slide
   useEffect(() => {
-    const i = setInterval(nextSlide, 5000);
-    return () => clearInterval(i);
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
   }, []);
 
-  // Swipe
   const handleTouchStart = (e: React.TouchEvent<HTMLElement>) => {
     startX.current = e.touches[0].clientX;
   };
@@ -48,24 +45,21 @@ export function Hero() {
     if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide();
   };
 
-  // Hide scroll icon after first scroll
   useEffect(() => {
-    const handleScroll = () => {
+    const onScroll = () => {
       if (window.scrollY > 10 && !hasScrolledOnce) {
         setHasScrolledOnce(true);
         setShowScrollIcon(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, [hasScrolledOnce]);
 
-  const scrollToContact = () => {
+  const scrollToContact = () =>
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToAbout = () => {
+  const scrollToAbout = () =>
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <>
@@ -76,7 +70,6 @@ export function Hero() {
         onTouchEnd={handleTouchEnd}
         className="relative w-full min-h-screen flex items-center justify-center overflow-hidden"
       >
-        {/* Background slider */}
         <div className="absolute inset-0">
           {images.map((img, i) => (
             <ImageWithFallback
@@ -91,14 +84,12 @@ export function Hero() {
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
-        {/* Arrows */}
         <button
           onClick={prevSlide}
           className="absolute left-3 sm:left-6 z-20 p-2 rounded-full bg-black/40 hover:bg-black/60 text-white"
         >
           <ChevronLeft size={26} />
         </button>
-
         <button
           onClick={nextSlide}
           className="absolute right-3 sm:right-6 z-20 p-2 rounded-full bg-black/40 hover:bg-black/60 text-white"
@@ -106,13 +97,11 @@ export function Hero() {
           <ChevronRight size={26} />
         </button>
 
-        {/* Content */}
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-3xl sm:text-7xl font-bold mb-3">Goonj</h1>
           <p className="text-sm sm:text-2xl mb-6 text-gray-200">
             Official Musical Society of DCRUST, Murthal
           </p>
-
           <div className="flex flex-wrap justify-center gap-4">
             <button
               onClick={scrollToContact}
@@ -129,7 +118,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Scroll Down Bounce Indicator */}
         {showScrollIcon && (
           <div
             onClick={scrollToAbout}
@@ -144,7 +132,6 @@ export function Hero() {
           </div>
         )}
 
-        {/* Dots */}
         <div className="absolute bottom-12 sm:bottom-6 z-20 flex gap-2">
           {images.map((_, i) => (
             <button

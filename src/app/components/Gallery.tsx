@@ -85,10 +85,7 @@ export function Gallery() {
     "/73.jpg",
     "/74.jpg",
     "/75.jpg",
-  ].map((src, index) => ({
-    src,
-    alt: `Gallery Image ${index + 1}`,
-  }));
+  ].map((src, index) => ({ src, alt: `Gallery Image ${index + 1}` }));
 
   const displayedImages = showAll ? galleryImages : galleryImages.slice(0, 9);
 
