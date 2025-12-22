@@ -74,7 +74,7 @@ import g67 from "../../assets/67.jpg";
 import g68 from "../../assets/68.1.png";
 import g69 from "../../assets/69.jpg";
 import g70 from "../../assets/70.jpg";
-import g71 from "../../assets/71.jpg";
+import g71_1 from "../../assets/71_1.jpg";
 import g72 from "../../assets/72.jpg";
 import g73 from "../../assets/73.jpg";
 import g74 from "../../assets/74.jpg";
@@ -158,7 +158,7 @@ export function Gallery() {
     g68,
     g69,
     g70,
-    g71,
+    g71_1,
     g72,
     g73,
     g74,
