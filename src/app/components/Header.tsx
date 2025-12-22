@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import logo from "../../assets/logoTransparent.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,11 +30,7 @@ export function Header() {
           onClick={() => goToHomeSection()}
           className="flex items-center gap-2 cursor-pointer"
         >
-          <img
-            src="/logoTransparent.png"
-            alt="Goonj Logo"
-            className="w-8 h-8 object-contain"
-          />
+          <img src={logo} alt="Goonj Logo" className="w-8 h-8 object-contain" />
           <span className="font-sans text-xl md:text-2xl">
             Goonj : Feel Your Soul
           </span>

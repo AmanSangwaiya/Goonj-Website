@@ -1,4 +1,5 @@
 import { Music, Users, CalendarDays } from "lucide-react";
+import kunalSir from "../../assets/Senior.jpg";
 
 export function About() {
   const features = [
@@ -57,7 +58,7 @@ export function About() {
             {/* Left Side - Image */}
             <div className="md:w-1/3 mb-6 md:mb-0">
               <img
-                src="/Senior.jpg"
+                src={kunalSir}
                 alt="Mr. Kunal Bhardwaj"
                 className="rounded-lg shadow-lg w-full object-cover"
               />

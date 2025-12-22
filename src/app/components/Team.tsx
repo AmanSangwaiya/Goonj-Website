@@ -1,5 +1,43 @@
 import { useState } from "react";
 
+/* Assets imports */
+import lokesh from "../../assets/lokesh.jpeg";
+import rajni from "../../assets/rajni.jpeg";
+import himanshu from "../../.assets/himanshu.png";
+import twinkle from "../../assets/twinkle.jpeg";
+import akshay from "../../assets/akshay.png";
+import vipul from "../../assets/vipul.png";
+import harpreet from "../../assets/harpreet.jpeg";
+import aditi from "../../assets/aditi.jpeg";
+import ankit from "../../assets/Ankit.jpeg";
+import nikita from "../../assets/nikita.jpeg";
+import harshit from "../../assets/harshit.jpg";
+import dikshant from "../../assets/dikshant.jpg";
+import arun from "../../assets/arun.jpg";
+import aastha from "../../assets/aastha.jpeg";
+import aman from "../../assets/aman.jpeg";
+import manthan from "../../assets/manthan.jpg";
+import saman from "../../assets/saman.jpeg";
+import omi from "../../assets/omi.jpeg";
+import sahil from "../../assets/sahil.jpeg";
+import janvi from "../../assets/janvi.jpeg";
+import rajkumar from "../../assets/rajkumar.jpeg";
+import ayushi from "../../assets/ayushi.jpeg";
+import rishabh from "../../assets/rishabh.jpeg";
+import lavisha from "../../assets/lavisha.jpeg";
+import preet from "../../assets/preet.jpeg";
+import ambika from "../../assets/ambika.jpeg";
+import nandini from "../../assets/nandini.jpeg";
+import dharmendar from "../../assets/dharmendar.jpeg";
+import mahesh from "../../assets/mahesh.jpeg";
+import rupen from "../../assets/rupen.jpeg";
+import sehrish from "../../assets/sehrish.jpeg";
+import pavnesh from "../../assets/pavnesh.jpeg";
+import harshpreet from "../../assets/harshpreet.jpeg";
+import abhishek from "../../assets/abhishek.jpeg";
+import mohit from "../../assets/mohit.jpg";
+import sachin from "../../assets/sachin.jpg";
+
 export function Team() {
   const [showAll, setShowAll] = useState(false);
 
@@ -8,147 +46,107 @@ export function Team() {
       name: "Lokesh",
       role: "Coordinator",
       instrument: "Drummer",
-      image: "/lokesh.jpeg",
+      image: lokesh,
     },
     {
       name: "Rajni",
       role: "Coordinator",
       instrument: "Vocalist",
-      image: "/rajni.jpeg",
+      image: rajni,
     },
     {
       name: "Himanshu",
       role: "Management Coordinator",
       instrument: "",
-      image: "/himanshu.png",
+      image: himanshu,
     },
     {
       name: "Twinkle",
       role: "Management Coordinator",
       instrument: "Vocalist",
-      image: "/twinkle.jpeg",
+      image: twinkle,
     },
     {
       name: "Akshay Bholay",
       role: "",
       instrument: "Vocalist & Guitarist",
-      image: "/akshay.png",
+      image: akshay,
     },
     {
       name: "Vipul",
       role: "",
       instrument: "Vocalist & Guitarist",
-      image: "/vipul.png",
+      image: vipul,
     },
     {
       name: "Harpreet",
       role: "",
       instrument: "Vocalist & Guitarist",
-      image: "/harpreet.jpeg",
+      image: harpreet,
     },
-    { name: "Aditi", role: "", instrument: "Vocalist", image: "/aditi.jpeg" },
+    { name: "Aditi", role: "", instrument: "Vocalist", image: aditi },
     {
       name: "Ankit",
       role: "",
       instrument: "Guitarist & Vocalist",
-      image: "/Ankit.jpeg",
+      image: ankit,
     },
-    { name: "Nikita", role: "", instrument: "Vocalist", image: "/nikita.jpeg" },
+    { name: "Nikita", role: "", instrument: "Vocalist", image: nikita },
     {
       name: "Harshit Gupta",
       role: "",
       instrument: "Management",
-      image: "/harshit.jpg",
+      image: harshit,
     },
     {
       name: "Dikshant Bhardwaj",
       role: "",
       instrument: "Vocalist",
-      image: "/dikshant.jpg",
+      image: dikshant,
     },
-    { name: "Arun", role: "", instrument: "Vocalist", image: "/arun.jpg" },
-    { name: "Aastha", role: "", instrument: "Vocalist", image: "/aastha.jpeg" },
-    { name: "Aman", role: "", instrument: "Drummer", image: "/aman.jpeg" },
+    { name: "Arun", role: "", instrument: "Vocalist", image: arun },
+    { name: "Aastha", role: "", instrument: "Vocalist", image: aastha },
+    { name: "Aman", role: "", instrument: "Drummer", image: aman },
     {
       name: "Manthan",
       role: "",
       instrument: "Vocalist & Guitarist",
-      image: "/manthan.jpg",
+      image: manthan,
     },
-    { name: "Saman", role: "", instrument: "Vocalist", image: "/saman.jpeg" },
-    { name: "Omi", role: "", instrument: "Management", image: "/omi.jpeg" },
-    { name: "Sahil", role: "", instrument: "Management", image: "/sahil.jpeg" },
-    { name: "Janvi", role: "", instrument: "Management", image: "/janvi.jpeg" },
-    {
-      name: "Raj Kumar",
-      role: "",
-      instrument: "Vocalist",
-      image: "/rajkumar.jpeg",
-    },
-    { name: "Ayushi", role: "", instrument: "Vocalist", image: "/ayushi.jpeg" },
-    {
-      name: "Rishabh",
-      role: "",
-      instrument: "Guitarist",
-      image: "/rishabh.jpeg",
-    },
-    {
-      name: "Lavisha",
-      role: "",
-      instrument: "Vocalist",
-      image: "/lavisha.jpeg",
-    },
-    { name: "Preet", role: "", instrument: "Vocalist", image: "/preet.jpeg" },
-    { name: "Ambika", role: "", instrument: "Vocalist", image: "/ambika.jpeg" },
-    {
-      name: "Nandini",
-      role: "",
-      instrument: "Vocalist",
-      image: "/nandini.jpeg",
-    },
+    { name: "Saman", role: "", instrument: "Vocalist", image: saman },
+    { name: "Omi", role: "", instrument: "Management", image: omi },
+    { name: "Sahil", role: "", instrument: "Management", image: sahil },
+    { name: "Janvi", role: "", instrument: "Management", image: janvi },
+    { name: "Raj Kumar", role: "", instrument: "Vocalist", image: rajkumar },
+    { name: "Ayushi", role: "", instrument: "Vocalist", image: ayushi },
+    { name: "Rishabh", role: "", instrument: "Guitarist", image: rishabh },
+    { name: "Lavisha", role: "", instrument: "Vocalist", image: lavisha },
+    { name: "Preet", role: "", instrument: "Vocalist", image: preet },
+    { name: "Ambika", role: "", instrument: "Vocalist", image: ambika },
+    { name: "Nandini", role: "", instrument: "Vocalist", image: nandini },
     {
       name: "Dharmendra",
       role: "",
       instrument: "Lyricist & Rapper",
-      image: "/dharmendar.jpeg",
+      image: dharmendar,
     },
-    {
-      name: "Mahesh",
-      role: "",
-      instrument: "Keyboard Player",
-      image: "/mahesh.jpeg",
-    },
-    { name: "Rupen", role: "", instrument: "Vocalist", image: "/rupen.jpeg" },
-    {
-      name: "Sehrish",
-      role: "",
-      instrument: "Vocalist",
-      image: "/sehrish.jpeg",
-    },
-    { name: "Pavnesh", role: "", instrument: "Rapper", image: "/pavnesh.jpeg" },
-    {
-      name: "Harshpreet",
-      role: "",
-      instrument: "Flutist",
-      image: "/harshpreet.jpeg",
-    },
+    { name: "Mahesh", role: "", instrument: "Keyboard Player", image: mahesh },
+    { name: "Rupen", role: "", instrument: "Vocalist", image: rupen },
+    { name: "Sehrish", role: "", instrument: "Vocalist", image: sehrish },
+    { name: "Pavnesh", role: "", instrument: "Rapper", image: pavnesh },
+    { name: "Harshpreet", role: "", instrument: "Flutist", image: harshpreet },
     {
       name: "Abhishek Sinha",
       role: "",
       instrument: "Vocalist",
-      image: "/abhishek.jpeg",
+      image: abhishek,
     },
-    {
-      name: "Mohit Jangra",
-      role: "",
-      instrument: "Vocalist",
-      image: "/mohit.jpg",
-    },
+    { name: "Mohit Jangra", role: "", instrument: "Vocalist", image: mohit },
     {
       name: "Sachin Dadarwal",
       role: "",
       instrument: "Vocalist",
-      image: "/sachin.jpg",
+      image: sachin,
     },
   ];
 

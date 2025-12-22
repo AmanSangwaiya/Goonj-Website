@@ -1,4 +1,5 @@
 import { Music } from "lucide-react";
+import logo from "../../assets/logoWhite.png";
 
 export function Footer() {
   const scrollToSection = (id: string) => {
@@ -15,7 +16,7 @@ export function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <img
-              src="/logoWhite.png"
+              src={logo}
               alt="Goonj Logo"
               className="w-9 h-9 object-contain"
             />

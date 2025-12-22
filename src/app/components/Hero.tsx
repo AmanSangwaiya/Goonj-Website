@@ -2,26 +2,24 @@ import React, { useEffect, useRef, useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ChevronLeft, ChevronRight, ArrowDown } from "lucide-react";
 
-// Images from public folder
-const images = [
-  "/bg.jpg",
-  "/41.jpg",
-  "/57.jpeg",
-  "/67.jpg",
-  "/i.jpg",
-  "/12.jpg",
-  "/5.jpg",
-  "/i3.jpg",
-  "/30.jpg",
-  "/i2.jpg",
-];
+// Assets imports
+import bg1 from "../../assets/bg.jpg";
+import bg2 from "../../assets/41.jpg";
+import bg3 from "../../assets/57.jpeg";
+import bg4 from "../../assets/67.jpg";
+import bg5 from "../../assets/i.jpg";
+import bg6 from "../../assets/12.jpg";
+import bg7 from "../../assets/5.jpg";
+import bg8 from "../../assets/i3.jpg";
+import bg9 from "../../assets/30.jpg";
+import bg10 from "../../assets/i2.jpg";
+
+const images = [bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10];
 
 export function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const [showScrollIcon, setShowScrollIcon] = useState(true);
   const [hasScrolledOnce, setHasScrolledOnce] = useState(false);
-
   const startX = useRef(0);
   const endX = useRef(0);
 
@@ -30,8 +28,8 @@ export function Hero() {
     setCurrentIndex((p) => (p === 0 ? images.length - 1 : p - 1));
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
-    return () => clearInterval(interval);
+    const i = setInterval(nextSlide, 5000);
+    return () => clearInterval(i);
   }, []);
 
   const handleTouchStart = (e: React.TouchEvent<HTMLElement>) => {
@@ -46,20 +44,22 @@ export function Hero() {
   };
 
   useEffect(() => {
-    const onScroll = () => {
+    const handleScroll = () => {
       if (window.scrollY > 10 && !hasScrolledOnce) {
         setHasScrolledOnce(true);
         setShowScrollIcon(false);
       }
     };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [hasScrolledOnce]);
 
-  const scrollToContact = () =>
+  const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  const scrollToAbout = () =>
+  };
+  const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>
@@ -90,6 +90,7 @@ export function Hero() {
         >
           <ChevronLeft size={26} />
         </button>
+
         <button
           onClick={nextSlide}
           className="absolute right-3 sm:right-6 z-20 p-2 rounded-full bg-black/40 hover:bg-black/60 text-white"
@@ -102,6 +103,7 @@ export function Hero() {
           <p className="text-sm sm:text-2xl mb-6 text-gray-200">
             Official Musical Society of DCRUST, Murthal
           </p>
+
           <div className="flex flex-wrap justify-center gap-4">
             <button
               onClick={scrollToContact}

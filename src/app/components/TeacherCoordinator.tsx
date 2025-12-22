@@ -1,4 +1,7 @@
+// TeacherCoordinator.tsx
 import { Mail } from "lucide-react";
+import aartiImg from "../assets/aarti.png";
+import kavitaImg from "../assets/kavita.png";
 
 export function TeacherCoordinator() {
   const coordinators = [
@@ -7,7 +10,7 @@ export function TeacherCoordinator() {
       role: "Assistant Professor",
       department: "Department of Management Studies",
       email: "r.hamilton@college.edu",
-      image: "/aarti.png",
+      image: aartiImg,
       bio: "The hard work, dedication, and continuous support of our teachers have played a very important role in shaping and strengthening our society. Their guidance and encouragement have helped us grow, learn, and move forward with confidence, making our society what it is today.",
     },
     {
@@ -15,7 +18,7 @@ export function TeacherCoordinator() {
       role: "Associate Professor",
       department: "Department of Computer Science Engineering",
       email: "r.hamilton@college.edu",
-      image: "/kavita.png",
+      image: kavitaImg,
       bio: "The constant efforts, mentorship, and support of our teachers have been instrumental in the development of our society. Their guidance has encouraged us to improve, evolve, and work together, laying a strong foundation for everything we achieve today.",
     },
   ];
@@ -64,6 +67,12 @@ export function TeacherCoordinator() {
                   <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                     {coordinator.bio}
                   </p>
+                  <a
+                    href={`mailto:${coordinator.email}`}
+                    className="inline-flex items-center gap-1 text-purple-600 hover:underline"
+                  >
+                    <Mail size={16} /> {coordinator.email}
+                  </a>
                 </div>
               </div>
             </div>

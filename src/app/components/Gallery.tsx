@@ -3,95 +3,182 @@ import { useState, useEffect } from "react";
 import { Plus } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
+// 👇 Import all 79 images from src/assets
+import img1 from "../../assets/1.1.png";
+import img2 from "../../assets/2.jpg";
+import img3 from "../../assets/3.jpg";
+import img4 from "../../assets/4.jpg";
+import img5 from "../../assets/5.jpg";
+import img6 from "../../assets/6.jpg";
+import img7 from "../../assets/7.jpg";
+import img8 from "../../assets/8.jpg";
+import img9 from "../../assets/9.jpg";
+import img10 from "../../assets/10.jpg";
+import img11 from "../../assets/11.jpg";
+import img12 from "../../assets/12.jpg";
+import img13 from "../../assets/13.jpg";
+import img14 from "../../assets/14.jpg";
+import img15 from "../../assets/15.jpg";
+import img16 from "../../assets/16.jpg";
+import img17 from "../../assets/17.jpg";
+import img18 from "../../assets/18.jpg";
+import img19 from "../../assets/19.jpg";
+import img20 from "../../assets/20.jpg";
+import img21 from "../../assets/21.jpg";
+import img22 from "../../assets/22.jpg";
+import img23 from "../../assets/23.jpg";
+import img24 from "../../assets/24.jpg";
+import img25 from "../../assets/25.jpg";
+import img26 from "../../assets/26.jpg";
+import img27 from "../../assets/27.jpg";
+import img28 from "../../assets/28.jpg";
+import img29 from "../../assets/29.jpg";
+import img30 from "../../assets/30.jpg";
+import img31 from "../../assets/31.jpg";
+import img32 from "../../assets/32.jpg";
+import img33 from "../../assets/33.jpg";
+import img34 from "../../assets/34.jpg";
+import img35 from "../../assets/35.jpg";
+import img36 from "../../assets/36.jpg";
+import img37 from "../../assets/37.jpg";
+import img38 from "../../assets/38.jpg";
+import img39 from "../../assets/39.jpg";
+import img40 from "../../assets/40.jpg";
+import img41 from "../../assets/41.jpg";
+import img42 from "../../assets/42.jpg";
+import img43 from "../../assets/43.jpg";
+import img44 from "../../assets/44.jpg";
+import img45 from "../../assets/45.jpg";
+import img46 from "../../assets/46.jpg";
+import img47 from "../../assets/47.jpg";
+import img48 from "../../assets/48.jpg";
+import img49 from "../../assets/49.jpg";
+import img50 from "../../assets/50.jpg";
+import img51 from "../../assets/51.jpg";
+import img52 from "../../assets/52.jpg";
+import img53 from "../../assets/53.jpg";
+import img54 from "../../assets/54.jpg";
+import img55 from "../../assets/55.jpg";
+import img56 from "../../assets/56.jpg";
+import img57 from "../../assets/57.jpeg";
+import img58 from "../../assets/58.jpeg";
+import img59 from "../../assets/59.jpeg";
+import img60 from "../../assets/60.jpeg";
+import img61 from "../../assets/61.jpeg";
+import img62 from "../../assets/62.jpeg";
+import img63 from "../../assets/63.jpeg";
+import img64 from "../../assets/64.jpeg";
+import img65 from "../../assets/65.jpeg";
+import img66 from "../../assets/66.png";
+import img67 from "../../assets/67.jpg";
+import img68 from "../../assets/68.1.png";
+import img69 from "../../assets/69.jpg";
+import img70 from "../../assets/70.jpg";
+import img71 from "../../assets/71_1.jpg";
+import img72 from "../../assets/72.jpg";
+import img73 from "../../assets/73.jpg";
+import img74 from "../../assets/74.jpg";
+import img75 from "../../assets/75.jpg";
+import img76 from "../../assets/76.jpg";
+import img77 from "../../assets/77.jpg";
+import img78 from "../../assets/78.jpg";
+import img79 from "../../assets/79.jpg";
+
+const galleryImages = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+  img17,
+  img18,
+  img19,
+  img20,
+  img21,
+  img22,
+  img23,
+  img24,
+  img25,
+  img26,
+  img27,
+  img28,
+  img29,
+  img30,
+  img31,
+  img32,
+  img33,
+  img34,
+  img35,
+  img36,
+  img37,
+  img38,
+  img39,
+  img40,
+  img41,
+  img42,
+  img43,
+  img44,
+  img45,
+  img46,
+  img47,
+  img48,
+  img49,
+  img50,
+  img51,
+  img52,
+  img53,
+  img54,
+  img55,
+  img56,
+  img57,
+  img58,
+  img59,
+  img60,
+  img61,
+  img62,
+  img63,
+  img64,
+  img65,
+  img66,
+  img67,
+  img68,
+  img69,
+  img70,
+  img71,
+  img72,
+  img73,
+  img74,
+  img75,
+  img76,
+  img77,
+  img78,
+  img79,
+].map((src, index) => ({
+  src,
+  alt: `Gallery Image ${index + 1}`,
+}));
+
 export function Gallery() {
   const [showAll, setShowAll] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
 
-  const galleryImages = [
-    "/1.1.png",
-    "/2.jpg",
-    "/3.jpg",
-    "/4.jpg",
-    "/5.jpg",
-    "/6.jpg",
-    "/7.jpg",
-    "/8.jpg",
-    "/9.jpg",
-    "/10.jpg",
-    "/11.jpg",
-    "/12.jpg",
-    "/13.jpg",
-    "/14.jpg",
-    "/15.jpg",
-    "/16.jpg",
-    "/17.jpg",
-    "/18.jpg",
-    "/19.jpg",
-    "/20.jpg",
-    "/21.jpg",
-    "/22.jpg",
-    "/23.jpg",
-    "/24.jpg",
-    "/25.jpg",
-    "/26.jpg",
-    "/27.jpg",
-    "/28.jpg",
-    "/29.jpg",
-    "/30.jpg",
-    "/31.jpg",
-    "/32.jpg",
-    "/33.jpg",
-    "/34.jpg",
-    "/35.jpg",
-    "/36.jpg",
-    "/37.jpg",
-    "/38.jpg",
-    "/39.jpg",
-    "/40.jpg",
-    "/41.jpg",
-    "/42.jpg",
-    "/43.jpg",
-    "/44.jpg",
-    "/45.jpg",
-    "/46.jpg",
-    "/47.jpg",
-    "/48.jpg",
-    "/49.jpg",
-    "/50.jpg",
-    "/51.jpg",
-    "/52.jpg",
-    "/53.jpg",
-    "/54.jpg",
-    "/55.jpg",
-    "/56.jpg",
-    "/57.jpeg",
-    "/58.jpeg",
-    "/59.jpeg",
-    "/60.jpeg",
-    "/61.jpeg",
-    "/62.jpeg",
-    "/63.jpeg",
-    "/64.jpeg",
-    "/65.jpeg",
-    "/66.png",
-    "/67.jpg",
-    "/68.1.png",
-    "/69.jpg",
-    "/70.jpg",
-    "/71_1.jpg",
-    "/72.jpg",
-    "/73.jpg",
-    "/74.jpg",
-    "/75.jpg",
-  ].map((src, index) => ({ src, alt: `Gallery Image ${index + 1}` }));
-
   const displayedImages = showAll ? galleryImages : galleryImages.slice(0, 9);
 
   useEffect(() => {
     if (!isOpen) return;
-
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsOpen(false);
       if (e.key === "ArrowRight")
@@ -99,10 +186,9 @@ export function Gallery() {
       if (e.key === "ArrowLeft")
         setCurrentIndex((i) => (i === 0 ? galleryImages.length - 1 : i - 1));
     };
-
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [isOpen, galleryImages.length]);
+  }, [isOpen]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     setTouchStartX(e.touches[0].clientX);
@@ -111,11 +197,9 @@ export function Gallery() {
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStartX === null) return;
     const diff = touchStartX - e.changedTouches[0].clientX;
-
     if (diff > 50) setCurrentIndex((i) => (i + 1) % galleryImages.length);
     else if (diff < -50)
       setCurrentIndex((i) => (i === 0 ? galleryImages.length - 1 : i - 1));
-
     setTouchStartX(null);
   };
 
