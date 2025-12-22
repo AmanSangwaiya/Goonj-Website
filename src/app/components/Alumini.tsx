@@ -39,7 +39,7 @@ import dhruv from "../../assets/dhruv.png";
 import manish from "../../assets/manish.png";
 import utkarsh from "../../assets/utkarsh.png";
 import rahulJangra from "../../assets/rahuljangra.png";
-import ansh from "../../assets/ansh1.jpg";
+import ansh1 from "../../assets/ansh1.jpg";
 
 export function Alumini() {
   const [showAll, setShowAll] = useState(false);
@@ -81,7 +81,7 @@ export function Alumini() {
     { name: "Kajal", batch: "BATCH 2K19", image: kajal },
     { name: "Anmol", batch: "BATCH 2K20", image: anmol },
     { name: "Deepanshu", batch: "BATCH 2K20", image: deepanshu },
-    { name: "Ansh", batch: "BATCH 2K20", image: ansh },
+    { name: "Ansh", batch: "BATCH 2K20", image: ansh1 },
     { name: "Prisha", batch: "BATCH 2K20", image: prisha },
     { name: "Prerna", batch: "BATCH 2K20", image: prerna },
     { name: "Aaryan Mandi", batch: "BATCH 2K20", image: aryan },
