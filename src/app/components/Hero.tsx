@@ -2,23 +2,24 @@ import React, { useEffect, useRef, useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ChevronLeft, ChevronRight, ArrowDown } from "lucide-react";
 
-import bg1 from "../../assets/bg.jpg";
-import bg2 from "../../assets/41.jpg";
-import bg3 from "../../assets/57.jpeg";
-import bg4 from "../../assets/67.jpg";
-import bg5 from "../../assets/i.jpg";
-import bg6 from "../../assets/12.jpg";
-import bg7 from "../../assets/5.jpg";
-import bg8 from "../../assets/i3.jpg";
-import bg9 from "../../assets/30.jpg";
-import bg10 from "../../assets/i2.jpg";
-
-const images = [bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8, bg9, bg10];
+// 👇 No imports from src/assets anymore
+const images = [
+  "/bg.jpg",
+  "/41.jpg",
+  "/57.jpeg",
+  "/67.jpg",
+  "/i.jpg",
+  "/12.jpg",
+  "/5.jpg",
+  "/i3.jpg",
+  "/30.jpg",
+  "/i2.jpg",
+];
 
 export function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // 👇 scroll indicator logic (RESET ON REFRESH)
+  // Scroll indicator
   const [showScrollIcon, setShowScrollIcon] = useState(true);
   const [hasScrolledOnce, setHasScrolledOnce] = useState(false);
 
@@ -26,7 +27,6 @@ export function Hero() {
   const endX = useRef(0);
 
   const nextSlide = () => setCurrentIndex((p) => (p + 1) % images.length);
-
   const prevSlide = () =>
     setCurrentIndex((p) => (p === 0 ? images.length - 1 : p - 1));
 
@@ -48,7 +48,7 @@ export function Hero() {
     if (Math.abs(diff) > 50) diff > 0 ? nextSlide() : prevSlide();
   };
 
-  // 👇 hide scroll icon AFTER FIRST SCROLL ONLY
+  // Hide scroll icon after first scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10 && !hasScrolledOnce) {
@@ -56,7 +56,6 @@ export function Hero() {
         setShowScrollIcon(false);
       }
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [hasScrolledOnce]);
@@ -64,7 +63,6 @@ export function Hero() {
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
-
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -131,15 +129,11 @@ export function Hero() {
           </div>
         </div>
 
-        {/* 👇 Scroll Down Bounce Indicator */}
+        {/* Scroll Down Bounce Indicator */}
         {showScrollIcon && (
           <div
             onClick={scrollToAbout}
-            className="
-              absolute bottom-6 left-1/2 -translate-x-1/2
-              z-20 flex flex-col items-center cursor-pointer
-              animate-[bounce_1.2s_infinite]
-            "
+            className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center cursor-pointer animate-[bounce_1.2s_infinite]"
           >
             <div className="w-11 h-11 rounded-full border-2 border-white/80 flex items-center justify-center bg-black/30 backdrop-blur-sm">
               <ArrowDown size={20} className="text-white" />
