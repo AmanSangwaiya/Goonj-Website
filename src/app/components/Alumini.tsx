@@ -39,7 +39,7 @@ import dhruv from "../../assets/dhruv.png";
 import manish from "../../assets/manish.png";
 import utkarsh from "../../assets/utkarsh.png";
 import rahulJangra from "../../assets/rahuljangra.png";
-import ansh from "../../assets/ansh.jpg";
+import ansh from "../../assets/ansh1.jpg";
 
 export function Alumini() {
   const [showAll, setShowAll] = useState(false);
