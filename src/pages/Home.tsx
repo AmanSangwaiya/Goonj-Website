@@ -3,7 +3,7 @@ import { About } from "../app/components/About";
 import { Events } from "../app/components/Events";
 import { Team } from "../app/components/Team";
 import { TeacherCoordinator } from "../app/components/TeacherCoordinator";
-import { Alumini } from "../app/components/Alumini";
+import { Alumni } from "../app/components/Alumini";
 import { Achievements } from "../app/components/Achievements";
 import { Gallery } from "../app/components/Gallery";
 import { Contact } from "../app/components/Contact";
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
 
       <section id="alumni">
-        <Alumini />
+        <Alumni />
       </section>
 
       <section id="achievements">
