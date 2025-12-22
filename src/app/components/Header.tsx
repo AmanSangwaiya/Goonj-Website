@@ -1,41 +1,42 @@
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import logo from "../../assets/logoTransparent.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Universal Home + Section navigation
   const goToHomeSection = (id?: string) => {
     setIsMenuOpen(false);
 
-    // If already on Home page
     if (location.pathname === "/") {
       if (id) {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       } else {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
-    }
-    // If on another page
-    else {
+    } else {
       navigate(`/#${id ?? ""}`);
     }
   };
 
   return (
     <header className="fixed top-0 w-full bg-white/40 backdrop-blur-lg shadow-sm z-50">
-      <nav className="max-w-90rem mx-auto px-4 py-4 flex items-center justify-between">
+      <nav className="max-w-[90rem] mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <button
           onClick={() => goToHomeSection()}
           className="flex items-center gap-2 cursor-pointer"
         >
-          <img className="w-8" src={logo} alt="Goonj Logo" />
-          <span className="font-sans text-2xl">Goonj : Feel Your Soul</span>
+          <img
+            src="/logoTransparent.png"
+            alt="Goonj Logo"
+            className="w-8 h-8 object-contain"
+          />
+          <span className="font-sans text-xl md:text-2xl">
+            Goonj : Feel Your Soul
+          </span>
         </button>
 
         {/* Desktop Navigation */}
