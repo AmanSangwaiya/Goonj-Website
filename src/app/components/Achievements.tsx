@@ -37,6 +37,14 @@ export function Achievements() {
       category: "Competition",
     },
     {
+      icon: Star,
+      year: "2024",
+      title: "Selected for Inter-University North Zone Competition",
+      description:
+        "Continuing the winning legacy, Goonj emerged victorious at Rhythm 2024, earning top honors across multiple musical categories. This success secured selection to represent DCRUST at the Inter-University North Zone Competition in 2025 under the Association of Indian Universities (AIU).",
+      category: "Competition",
+    },
+    {
       icon: Trophy,
       year: "2024",
       title: "RHYTHM 2024",
@@ -110,12 +118,13 @@ export function Achievements() {
         "We had the opportunity to represent our university at NIFTEM, Kundli during 2018 and 2024, where we showcased our talent, gained valuable exposure, and enriched our experience through meaningful participation and learning.",
       category: "Representation",
     },
+
     {
       icon: Star,
-      year: "2024",
-      title: "Selected for Inter-University North Zone Competition",
+      year: "2023",
+      title: "Selected for Inter University North Zone Competition ",
       description:
-        "Continuing the winning legacy, Goonj emerged victorious at Rhythm 2024, earning top honors across multiple musical categories. This success secured selection to represent DCRUST at the Inter-University North Zone Competition in 2025 under the Association of Indian Universities (AIU).",
+        "Goonj emerged as the Rhythm 2023 Winner, earning multiple prizes in Solo Singing, Duet Music, and Group Singing categories. This honor qualified us to represent DCRUST at the Inter-University North Zone Competition organized by the Association of Indian Universities (AIU).",
       category: "Competition",
     },
 
@@ -140,14 +149,7 @@ export function Achievements() {
       ],
       category: "Competition",
     },
-    {
-      icon: Star,
-      year: "2023",
-      title: "Selected for Inter University North Zone Competition ",
-      description:
-        "Goonj emerged as the Rhythm 2023 Winner, earning multiple prizes in Solo Singing, Duet Music, and Group Singing categories. This honor qualified us to represent DCRUST at the Inter-University North Zone Competition organized by the Association of Indian Universities (AIU).",
-      category: "Competition",
-    },
+
     {
       icon: Star,
       year: "2022",

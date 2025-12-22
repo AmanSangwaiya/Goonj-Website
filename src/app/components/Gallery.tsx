@@ -4,7 +4,7 @@ import { Plus } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 // --- IMPORT ALL 69 IMAGES ---
-import g1 from "../../assets/1.png";
+import g1 from "../../assets/1.1.png";
 import g2 from "../../assets/2.jpg";
 import g3 from "../../assets/3.jpg";
 import g4 from "../../assets/4.jpg";
@@ -70,9 +70,16 @@ import g63 from "../../assets/63.jpeg";
 import g64 from "../../assets/64.jpeg";
 import g65 from "../../assets/65.jpeg";
 import g66 from "../../assets/66.png";
-import g67 from "../../assets/67.png";
-import g68 from "../../assets/68.png";
+import g67 from "../../assets/67.jpg";
+import g68 from "../../assets/68.1.png";
 import g69 from "../../assets/69.jpg";
+import g70 from "../../assets/70.jpg";
+import g71 from "../../assets/71.jpg";
+import g72 from "../../assets/72.jpg";
+import g73 from "../../assets/73.jpg";
+import g74 from "../../assets/74.jpg";
+import g75 from "../../assets/75.jpg";
+import g76 from "../../assets/76.jpg";
 
 export function Gallery() {
   const [showAll, setShowAll] = useState(false);
@@ -150,6 +157,12 @@ export function Gallery() {
     g67,
     g68,
     g69,
+    g70,
+    g71,
+    g72,
+    g73,
+    g74,
+    g75,
   ].map((src, index) => ({ src, alt: `Gallery Image ${index + 1}` }));
 
   const displayedImages = showAll ? galleryImages : galleryImages.slice(0, 9);

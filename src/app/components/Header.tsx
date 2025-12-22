@@ -27,7 +27,7 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <header className="fixed top-0 w-full bg-white/40 backdrop-blur-lg shadow-sm z-50">
       <nav className="max-w-90rem mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <button

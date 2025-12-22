@@ -70,7 +70,7 @@ export function About() {
             {/* Right Side - Text */}
             <div className="md:w-2/3">
               <h3 className="text-2xl font-bold mb-4">Re-Birth of Goonj</h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-justify">
                 Basically it's not only me who took the society towards the new
                 beginning but rather all the members of the society, be it my
                 juniors or my batch mates. It was a combined effort by all of us
