@@ -7,7 +7,6 @@ import apurva from "../../assets/apurva.png";
 import kunalChauhan from "../../assets/kunalChauhan.png";
 import nishar from "../../assets/nishar.png";
 import jayesh from "../../assets/jayesh.png";
-import ansh from "../../assets/ansh.jpg";
 import anmol from "../../assets/Anmol.jpg";
 import chitrak from "../../assets/chitrak.jpg";
 import jatin from "../../assets/jatin.jpg";
@@ -40,6 +39,7 @@ import dhruv from "../../assets/dhruv.png";
 import manish from "../../assets/manish.png";
 import utkarsh from "../../assets/utkarsh.png";
 import rahulJangra from "../../assets/rahuljangra.png";
+import ansh from "../../assets/ansh.jpg";
 
 export function Alumini() {
   const [showAll, setShowAll] = useState(false);
