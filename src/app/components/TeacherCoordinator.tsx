@@ -1,7 +1,7 @@
 // TeacherCoordinator.tsx
 import { Mail } from "lucide-react";
-import aartiImg from "../assets/aarti.png";
-import kavitaImg from "../assets/kavita.png";
+import aartiImg from "../../assets/aarti.png";
+import kavitaImg from "../../assets/kavita.png";
 
 export function TeacherCoordinator() {
   const coordinators = [

@@ -40,7 +40,7 @@ import Deepanshu1Img from "../../assets/deepanshu1.jpg";
 import AnshImg from "../../assets/ansh1.jpg";
 import PrishaImg from "../../assets/prisha.png";
 import PrernaImg from "../../assets/prerna.png";
-import AryanImg from "../../assets/aryan.png";
+import AryanImg from "../../assets/aryan.jpg";
 import JatinImg from "../../assets/jatin.jpg";
 import SakshamImg from "../../assets/saksham.jpg";
 import RishitaImg from "../../assets/rishita.png";

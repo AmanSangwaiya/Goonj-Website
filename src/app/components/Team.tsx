@@ -3,7 +3,7 @@ import { useState } from "react";
 /* Assets imports */
 import lokesh from "../../assets/lokesh.jpeg";
 import rajni from "../../assets/rajni.jpeg";
-import himanshu from "../../.assets/himanshu.png";
+import himanshu from "../../assets/himanshu.png";
 import twinkle from "../../assets/twinkle.jpeg";
 import akshay from "../../assets/akshay.png";
 import vipul from "../../assets/vipul.png";

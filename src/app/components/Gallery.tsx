@@ -79,10 +79,10 @@ import img72 from "../../assets/72.jpg";
 import img73 from "../../assets/73.jpg";
 import img74 from "../../assets/74.jpg";
 import img75 from "../../assets/75.jpg";
-import img76 from "../../assets/76.jpg";
-import img77 from "../../assets/77.jpg";
-import img78 from "../../assets/78.jpg";
-import img79 from "../../assets/79.jpg";
+// import img76 from "../../assets/76.jpg";
+// import img77 from "../../assets/77.jpg";
+// import img78 from "../../assets/78.jpg";
+// import img79 from "../../assets/79.jpg";
 
 const galleryImages = [
   img1,
@@ -160,10 +160,10 @@ const galleryImages = [
   img73,
   img74,
   img75,
-  img76,
-  img77,
-  img78,
-  img79,
+  // img76,
+  // img77,
+  // img78,
+  // img79,
 ].map((src, index) => ({
   src,
   alt: `Gallery Image ${index + 1}`,
