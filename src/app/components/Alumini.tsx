@@ -1,8 +1,6 @@
 import { useState } from "react";
-
-// 👇 Import all images
 import SeniorImg from "../../assets/Senior.jpg";
-import AbhishekMittal from "../../assets/nopic.jpg";
+// import AbhishekMittal from "../../assets/nopic.jpg";
 import LakshayImg from "../../assets/nopic.jpg";
 import SapnaImg from "../../assets/nopic.jpg";
 import HarshitaImg from "../../assets/nopic.jpg";
@@ -60,7 +58,7 @@ export function Alumni() {
 
   const alumni = [
     { name: "Kunal Bhardwaj", batch: "BATCH 2K14", image: SeniorImg },
-    { name: "Abhishek Mittal", batch: "BATCH 2K14", image: AbhishekMittal },
+    // { name: "Abhishek Mittal", batch: "BATCH 2K14", image: AbhishekMittal },
     { name: "Lakshay", batch: "BATCH 2K14", image: LakshayImg },
     { name: "Sapna", batch: "BATCH 2K14", image: SapnaImg },
     { name: "Harshita", batch: "BATCH 2K14", image: HarshitaImg },
