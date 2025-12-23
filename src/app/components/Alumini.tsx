@@ -2,7 +2,7 @@ import { useState } from "react";
 
 // 👇 Import all images
 import SeniorImg from "../../assets/Senior.jpg";
-import AbhishekMittal from "../../assets/abhishekMittal.png";
+import AbhishekMittal from "../../assets/nopic.jpg";
 import LakshayImg from "../../assets/nopic.jpg";
 import SapnaImg from "../../assets/nopic.jpg";
 import HarshitaImg from "../../assets/nopic.jpg";
