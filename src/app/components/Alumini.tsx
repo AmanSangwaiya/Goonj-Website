@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-// 👇 Import all images from assets
+// 👇 Import all images
 import SeniorImg from "../../assets/Senior.jpg";
 import AbhishekMittal from "../../assets/abhishekMittal.png";
 import LakshayImg from "../../assets/nopic.jpg";
@@ -123,7 +123,9 @@ export function Alumni() {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Alumni</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Meet Our Alumni
+          </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Our past members who contributed to our musical journey
           </p>
@@ -131,29 +133,44 @@ export function Alumni() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {displayedAlumni.map((a) => (
-            <div key={a.name} className="bg-white rounded-lg shadow">
-              <img
-                src={a.image}
-                className="w-full aspect-square object-cover"
-              />
-              <div className="p-4">
+            <div
+              key={a.name}
+              className="bg-white rounded-xl shadow hover:shadow-lg transition-shadow"
+            >
+              <div className="aspect-square overflow-hidden rounded-t-xl">
+                <img
+                  src={a.image}
+                  alt={a.name}
+                  loading="lazy"
+                  className="w-full h-full object-cover
+                             transition-transform duration-300
+                             hover:scale-110"
+                />
+              </div>
+
+              <div className="p-4 text-center">
                 <h3 className="font-bold">{a.name}</h3>
-                <p className="text-sm text-orange-600">{a.batch}</p>
+                <p className="text-sm font-bold text-orange-600">{a.batch}</p>
               </div>
             </div>
           ))}
         </div>
 
-        {!showAll && (
-          <div className="text-center mt-8">
-            <button
-              onClick={() => setShowAll(true)}
-              className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors"
-            >
-              See More ({alumni.length - 8})
-            </button>
-          </div>
-        )}
+        {/* SEE MORE / SEE LESS */}
+        <div className="text-center mt-10">
+          <button
+            onClick={() => {
+              setShowAll(!showAll);
+              document
+                .getElementById("alumni")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="bg-purple-600 text-white px-8 py-3 rounded-full
+                       hover:bg-purple-700 transition-colors"
+          >
+            {showAll ? "See Less" : `See More (${alumni.length - 8})`}
+          </button>
+        </div>
       </div>
     </section>
   );
