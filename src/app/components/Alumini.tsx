@@ -1,6 +1,5 @@
 import { useState } from "react";
 import SeniorImg from "../../assets/Senior.jpg";
-// import AbhishekMittal from "../../assets/nopic.jpg";
 import LakshayImg from "../../assets/nopic.jpg";
 import SapnaImg from "../../assets/nopic.jpg";
 import HarshitaImg from "../../assets/nopic.jpg";
@@ -53,36 +52,61 @@ import AbhayImg from "../../assets/abhay.png";
 import ChitrakImg from "../../assets/chitrak.jpg";
 import ChiragSaxenaImg from "../../assets/nopic.jpg";
 
-export function Alumni() {
-  const [showAll, setShowAll] = useState(false);
+/* ✅ Alumni type */
+type AlumniType = {
+  name: string;
+  batch: string;
+  image: string;
+  priority?: boolean;
+};
 
-  const alumni = [
-    { name: "Kunal Bhardwaj", batch: "BATCH 2K14", image: SeniorImg },
-    // { name: "Abhishek Mittal", batch: "BATCH 2K14", image: AbhishekMittal },
+export function Alumni() {
+  const [showAll, setShowAll] = useState<boolean>(false);
+
+  const alumni: AlumniType[] = [
+    {
+      name: "Kunal Bhardwaj",
+      batch: "BATCH 2K14",
+      image: SeniorImg,
+      priority: true,
+    },
     { name: "Lakshay", batch: "BATCH 2K14", image: LakshayImg },
     { name: "Sapna", batch: "BATCH 2K14", image: SapnaImg },
     { name: "Harshita", batch: "BATCH 2K14", image: HarshitaImg },
     { name: "Sunny Gaur", batch: "BATCH 2K14", image: SunnyGaurImg },
+
     { name: "Utkarsh", batch: "BATCH 2K15", image: UtkarshImg },
+
     { name: "Ayush", batch: "BATCH 2K16", image: AyushImg },
-    { name: "Deepanshu", batch: "BATCH 2K16", image: DeepanshuSirImg },
+    {
+      name: "Deepanshu",
+      batch: "BATCH 2K16",
+      image: DeepanshuSirImg,
+    },
     { name: "Manish", batch: "BATCH 2K16", image: ManishImg },
     { name: "Paras", batch: "BATCH 2K16", image: ParasImg },
     { name: "Anika", batch: "BATCH 2K16", image: AnikaImg },
     { name: "Mahima", batch: "BATCH 2K16", image: MahimaImg },
+
     { name: "Rahul Sagar", batch: "BATCH 2K17", image: RahulSagarImg },
     { name: "Ashwini", batch: "BATCH 2K17", image: AshwiniImg },
     { name: "Dhruv Balyan", batch: "BATCH 2K17", image: DhruvBalyanImg },
     { name: "Nidhi", batch: "BATCH 2K17", image: NidhiImg },
     { name: "Hemant", batch: "BATCH 2K17", image: HemantImg },
     { name: "Rahul Jangra", batch: "BATCH 2K17", image: RahulJangraImg },
+
     { name: "Yugpurush", batch: "BATCH 2K18", image: YugImg },
     { name: "Rishabh", batch: "BATCH 2K18", image: RishabhImg },
     { name: "Shivam", batch: "BATCH 2K18", image: ShivamImg },
-    { name: "Abhishek Sir", batch: "BATCH 2K18", image: AbhishekSeniorImg },
+    {
+      name: "Abhishek Aggarwal",
+      batch: "BATCH 2K18",
+      image: AbhishekSeniorImg,
+    },
     { name: "Dakshita", batch: "BATCH 2K18", image: DakshitaImg },
     { name: "Mansha", batch: "BATCH 2K18", image: ManshaImg },
     { name: "Garima", batch: "BATCH 2K18", image: GarimaImg },
+
     { name: "Vinayak Verma", batch: "BATCH 2K19", image: VinayakImg },
     { name: "Dimple", batch: "BATCH 2K19", image: DimpleImg },
     { name: "Prateek", batch: "BATCH 2K19", image: PrateekImg },
@@ -91,15 +115,17 @@ export function Alumni() {
     { name: "Khushboo", batch: "BATCH 2K19", image: KhushbooImg },
     { name: "Tannu", batch: "BATCH 2K19", image: TannuImg },
     { name: "Kajal", batch: "BATCH 2K19", image: KajalImg },
+
     { name: "Anmol", batch: "BATCH 2K20", image: AnmolImg },
-    { name: "Deepanshu", batch: "BATCH 2K20", image: Deepanshu1Img },
+    { name: "Dipanshu", batch: "BATCH 2K20", image: Deepanshu1Img },
     { name: "Ansh", batch: "BATCH 2K20", image: AnshImg },
     { name: "Prisha", batch: "BATCH 2K20", image: PrishaImg },
     { name: "Prerna", batch: "BATCH 2K20", image: PrernaImg },
-    { name: "Aaryan Mandi", batch: "BATCH 2K20", image: AryanImg },
+    { name: "Aryan Mandi", batch: "BATCH 2K20", image: AryanImg },
     { name: "Jatin", batch: "BATCH 2K20", image: JatinImg },
     { name: "Saksham Arora", batch: "BATCH 2K20", image: SakshamImg },
     { name: "Rishita", batch: "BATCH 2K20", image: RishitaImg },
+
     { name: "Mridul Birla", batch: "BATCH 2K21", image: MridulImg },
     { name: "Bhargavi Koul", batch: "BATCH 2K21", image: BhargaviImg },
     { name: "Khushi", batch: "BATCH 2K21", image: KhushiImg },
@@ -112,7 +138,23 @@ export function Alumni() {
     { name: "Chirag Saxena", batch: "BATCH 2K21", image: ChiragSaxenaImg },
   ];
 
-  const displayedAlumni = showAll ? alumni : alumni.slice(0, 8);
+  /* ✅ Extract year safely */
+  const getYear = (batch: string): number =>
+    parseInt(batch.replace("BATCH 2K", ""));
+
+  /* ✅ Priority + Batch + Name sorting */
+  const sortedAlumni = [...alumni].sort((a, b) => {
+    if (a.priority && !b.priority) return -1;
+    if (!a.priority && b.priority) return 1;
+
+    const yearA = getYear(a.batch);
+    const yearB = getYear(b.batch);
+
+    if (yearA !== yearB) return yearA - yearB;
+    return a.name.localeCompare(b.name);
+  });
+
+  const displayedAlumni = showAll ? sortedAlumni : sortedAlumni.slice(0, 8);
 
   return (
     <section
@@ -140,9 +182,7 @@ export function Alumni() {
                   src={a.image}
                   alt={a.name}
                   loading="lazy"
-                  className="w-full h-full object-cover
-                             transition-transform duration-300
-                             hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
               </div>
 
@@ -154,7 +194,6 @@ export function Alumni() {
           ))}
         </div>
 
-        {/* SEE MORE / SEE LESS */}
         <div className="text-center mt-10">
           <button
             onClick={() => {
@@ -163,8 +202,7 @@ export function Alumni() {
                 .getElementById("alumni")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="bg-purple-600 text-white px-8 py-3 rounded-full
-                       hover:bg-purple-700 transition-colors"
+            className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors"
           >
             {showAll ? "See Less" : `See More (${alumni.length - 8})`}
           </button>
