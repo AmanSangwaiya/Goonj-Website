@@ -120,7 +120,6 @@ export function Team() {
     { name: "Raj Kumar", role: "", instrument: "Vocalist", image: rajkumar },
     { name: "Ayushi", role: "", instrument: "Vocalist", image: ayushi },
     { name: "Rishabh", role: "", instrument: "Guitarist", image: rishabh },
-    { name: "Lavisha", role: "", instrument: "Vocalist", image: lavisha },
     { name: "Ambika", role: "", instrument: "Vocalist", image: ambika },
     { name: "Nandini", role: "", instrument: "Vocalist", image: nandini },
     {
