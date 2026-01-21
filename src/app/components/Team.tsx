@@ -104,7 +104,6 @@ export function Team() {
       instrument: "Vocalist",
       image: dikshant,
     },
-    { name: "Arun", role: "", instrument: "Vocalist", image: arun },
     { name: "Aastha", role: "", instrument: "Vocalist", image: aastha },
     { name: "Aman", role: "", instrument: "Drummer", image: aman },
     {
