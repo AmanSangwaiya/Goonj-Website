@@ -1,14 +1,7 @@
-import { Music } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../assets/logoWhite.png";
 
 export function Footer() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -25,30 +18,37 @@ export function Footer() {
 
           {/* Navigation */}
           <div className="flex gap-8 text-sm text-gray-400">
-            <button
-              onClick={() => scrollToSection("home")}
+            <HashLink
+              smooth
+              to="/#home"
               className="hover:text-white transition-colors"
             >
               Home
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
+            </HashLink>
+
+            <HashLink
+              smooth
+              to="/#about"
               className="hover:text-white transition-colors"
             >
               About
-            </button>
-            <button
-              onClick={() => scrollToSection("events")}
+            </HashLink>
+
+            <HashLink
+              smooth
+              to="/#events"
               className="hover:text-white transition-colors"
             >
               Events
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
+            </HashLink>
+
+            <HashLink
+              smooth
+              to="/#contact"
               className="hover:text-white transition-colors"
             >
               Contact
-            </button>
+            </HashLink>
           </div>
 
           {/* Copyright */}

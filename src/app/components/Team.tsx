@@ -121,7 +121,6 @@ export function Team() {
     { name: "Ayushi", role: "", instrument: "Vocalist", image: ayushi },
     { name: "Rishabh", role: "", instrument: "Guitarist", image: rishabh },
     { name: "Lavisha", role: "", instrument: "Vocalist", image: lavisha },
-    { name: "Preet", role: "", instrument: "Vocalist", image: preet },
     { name: "Ambika", role: "", instrument: "Vocalist", image: ambika },
     { name: "Nandini", role: "", instrument: "Vocalist", image: nandini },
     {
@@ -133,7 +132,6 @@ export function Team() {
     { name: "Mahesh", role: "", instrument: "Keyboard Player", image: mahesh },
     { name: "Rupen", role: "", instrument: "Vocalist", image: rupen },
     { name: "Sehrish", role: "", instrument: "Vocalist", image: sehrish },
-    { name: "Pavnesh", role: "", instrument: "Rapper", image: pavnesh },
     { name: "Harshpreet", role: "", instrument: "Flutist", image: harshpreet },
     {
       name: "Abhishek Sinha",
@@ -142,12 +140,6 @@ export function Team() {
       image: abhishek,
     },
     { name: "Mohit Jangra", role: "", instrument: "Vocalist", image: mohit },
-    {
-      name: "Sachin Dadarwal",
-      role: "",
-      instrument: "Vocalist",
-      image: sachin,
-    },
   ];
 
   const displayedMembers = showAll ? teamMembers : teamMembers.slice(0, 8);
