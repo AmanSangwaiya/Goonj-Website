@@ -137,7 +137,7 @@ export function Team() {
       instrument: "Vocalist",
       image: abhishek,
     },
-    { name: "Mohit Jangra", role: "", instrument: "Vocalist", image: mohit },
+    // { name: "Mohit Jangra", role: "", instrument: "Vocalist", image: mohit },
   ];
 
   const displayedMembers = showAll ? teamMembers : teamMembers.slice(0, 8);
