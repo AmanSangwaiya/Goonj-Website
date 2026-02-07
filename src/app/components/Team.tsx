@@ -48,12 +48,12 @@ export function Team() {
       instrument: "Drummer",
       image: lokesh,
     },
-    {
-      name: "Rajni",
-      role: "Coordinator",
-      instrument: "Vocalist",
-      image: rajni,
-    },
+    // {
+    //   name: "Rajni",
+    //   role: "Coordinator",
+    //   instrument: "Vocalist",
+    //   image: rajni,
+    // },
     {
       name: "Himanshu",
       role: "Management Coordinator",
