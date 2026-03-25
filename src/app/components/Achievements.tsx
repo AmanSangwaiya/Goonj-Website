@@ -3,6 +3,24 @@ import { Trophy, Award, Medal, Star } from "lucide-react";
 export function Achievements() {
   const achievements = [
     {
+      icon: Trophy,
+      year: "2026",
+      title: "PRISMA SRM",
+      description: [
+        "• Battle of Bands - 1st 🥇 ",
+        <br />,
+        "• Solo Instrumental -  1st 🥇 ",
+        <br />,
+        "• Solo Instrumental -  2nd 🥈 ",
+        <br />,
+        "• Solo Instrumental -  3rd 🥉 ",
+        <br />,
+        "• Solo Singing -  3rd 🥉 ",
+        <br />,
+      ],
+      category: "Competition",
+    },
+    {
       icon: Star,
       year: "2025",
       title: "Selected for Inter-University North Zone Competition",
