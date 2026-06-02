@@ -43,29 +43,25 @@ export function Team() {
 
   const teamMembers = [
     {
-      name: "Lokesh",
+      name: "Himanshu",
       role: "Coordinator",
-      instrument: "Drummer",
-      image: lokesh,
+      instrument: "",
+      image: himanshu,
     },
+
     // {
     //   name: "Rajni",
     //   role: "Coordinator",
     //   instrument: "Vocalist",
     //   image: rajni,
     // },
-    {
-      name: "Himanshu",
-      role: "Management Coordinator",
-      instrument: "",
-      image: himanshu,
-    },
-    {
-      name: "Twinkle",
-      role: "Management Coordinator",
-      instrument: "Vocalist",
-      image: twinkle,
-    },
+
+    // {
+    //   name: "Twinkle",
+    //   role: "Management Coordinator",
+    //   instrument: "Vocalist",
+    //   image: twinkle,
+    // },
     {
       name: "Akshay Bholay",
       role: "",
@@ -78,19 +74,26 @@ export function Team() {
       instrument: "Vocalist & Guitarist",
       image: vipul,
     },
+
     {
-      name: "Harpreet",
+      name: "Lokesh",
       role: "",
-      instrument: "Vocalist & Guitarist",
-      image: harpreet,
+      instrument: "Drummer",
+      image: lokesh,
     },
+    // {
+    //   name: "Harpreet",
+    //   role: "",
+    //   instrument: "Vocalist & Guitarist",
+    //   image: harpreet,
+    // },
     { name: "Aditi", role: "", instrument: "Vocalist", image: aditi },
-    {
-      name: "Ankit",
-      role: "",
-      instrument: "Guitarist & Vocalist",
-      image: ankit,
-    },
+    // {
+    //   name: "Ankit",
+    //   role: "",
+    //   instrument: "Guitarist & Vocalist",
+    //   image: ankit,
+    // },
     { name: "Nikita", role: "", instrument: "Vocalist", image: nikita },
     {
       name: "Harshit Gupta",
@@ -121,12 +124,12 @@ export function Team() {
     { name: "Rishabh", role: "", instrument: "Guitarist", image: rishabh },
     { name: "Ambika", role: "", instrument: "Vocalist", image: ambika },
     { name: "Nandini", role: "", instrument: "Vocalist", image: nandini },
-    {
-      name: "Dharmendra",
-      role: "",
-      instrument: "Lyricist & Rapper",
-      image: dharmendar,
-    },
+    // {
+    //   name: "Dharmendra",
+    //   role: "",
+    //   instrument: "Lyricist & Rapper",
+    //   image: dharmendar,
+    // },
     { name: "Mahesh", role: "", instrument: "Keyboard Player", image: mahesh },
     { name: "Rupen", role: "", instrument: "Vocalist", image: rupen },
     { name: "Sehrish", role: "", instrument: "Vocalist", image: sehrish },
